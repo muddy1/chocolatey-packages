@@ -1,0 +1,8 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+<Include details of how to verify checksum contents>
+Details on how to verify the checksum are provided by intel corp. on the softwares download page: 
+https://www.intel.com/content/www/us/en/download/19347/chipset-inf-utility.html, also, you can use the
+command in powershell Get-FileHash -Path "C:\path\to\your\file.txt" -Algorithm SHA256 (replace "C:\path\to\your\file.txt" with the actual file path)

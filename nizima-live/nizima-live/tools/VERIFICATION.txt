@@ -1,0 +1,7 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Users who wish to verify the authenticity of this package are able to do so by running the following command in powershell:
+
+ex: Get-FileHash 'C:\Path\To\Installer\Elk_0.4.0_windows_x86_64.msi' -Algorithm SHA256

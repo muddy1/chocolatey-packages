@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>Live2d-Cubism</id>
+    <version>5.2.02</version>
+    <packageSourceUrl>https://www.live2d.com/en/</packageSourceUrl>
+    <owners>Live2d Inc.</owners>
+    <title>Live2d Cubism</title>
+    <authors>Live2d Inc.</authors>
+	<projectUrl>https://www.live2d.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/live2d-cubism@master/live2d.install/icons/cubism-logo.png</iconUrl>
+    <copyright>© 2010 - 2025 Live2D Inc.</copyright>
+    <tags>live2d animation art</tags>
+    <summary>Software that directly animates your original drawings.</summary>
+    <description>Live2D is the industry standard tool for 2D real-time expression, chosen by professional creators around the world. It is widely used in mobile apps, console games, VTuber streaming, and animations.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

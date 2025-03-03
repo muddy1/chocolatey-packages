@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>Nizima-Live</id>
+    <version>2.1.2</version>
+    <packageSourceUrl>https://nizimalive.com/en/support/</packageSourceUrl>
+    <owners>Live2d Inc.</owners>
+    <title>nizima LIVE</title>
+    <authors>Live2d Inc.</authors>
+	<projectUrl>https://nizimalive.com/en/support/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/nizima-live@master/nizima-live/tools/icons/nizima-live.jpg</iconUrl>
+    <copyright>Copyright © Live2D Inc. All Rights Reserved</copyright>
+    <tags>nizima live vtuber facetracking</tags>
+    <summary>Precisely track your facial movements</summary>
+    <description>nizima LIVE precisely tracks your facial movements, bringing the Live2D model to life in an enchanting manner. There's no risk of face reveal on camera. If you connect to the iPhone app "nizima LIVE TRACKER" and use your iPhone as a camera, you can achieve even higher accuracy of motions than with a webcam.
+
+With a model compatible with Perfect Sync, richer expressions can be tracked such as "puffing out your cheeks" and "moving your mouth left and right." </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
