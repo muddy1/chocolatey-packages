@@ -1,0 +1,9 @@
+﻿From: https://www.nvidia.com/en-us/about-nvidia/terms-of-service/
+
+LICENSE
+
+Single Copy License
+
+The materials at the Site are subject to copyright and other intellectual property and other proprietary rights of NVIDIA or its licensors and any unauthorized use of any materials at the Site may violate copyright, trademark, and other intellectual property or other rights and applicable laws.
+
+You may have the option to download one copy of the software and materials found on the Site ("Materials") on a single computer for your personal, non-commercial internal use only unless specifically licensed to do otherwise by NVIDIA in writing or as allowed by any license terms which accompany or are provided with individual Materials. This is a license, not a transfer of title.

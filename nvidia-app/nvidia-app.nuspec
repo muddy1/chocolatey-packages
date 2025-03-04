@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>Nizima-Live</id>
+    <version>2.1.2</version>
+    <packageSourceUrl>https://nizimalive.com/en/support/</packageSourceUrl>
+    <owners>Live2d Inc.</owners>
+    <title>nizima LIVE</title>
+    <authors>Live2d Inc.</authors>
+	<projectUrl>https://nizimalive.com/en/support/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/nizima-live@master/nizima-live/tools/icons/nizima-live.jpg</iconUrl>
+    <copyright>Copyright © 2025 NVIDIA Corporation</copyright>
+    <tags>nvidia drivers gaming studio</tags>
+    <summary>NVIDIA App Update Adds DLSS 4 Overrides, New Broadcast Update, Improvements To RTX Video Super Resolution & More</summary>
+    <description>The NVIDIA App is the essential companion for PC gamers and creators. Keep your PC up to date with the latest NVIDIA drivers and technology. Optimize games and applications with a new unified GPU control center, capture your favorite moments with powerful recording tools through the in-game overlay, and discover the latest NVIDIA tools and software.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
