@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>letsview</id>
+    <version>1.3.7</version>
+    <packageSourceUrl>https://letsview.com/</packageSourceUrl>
+    <owners>WANGXU TECHNOLOGY CO., LIMITED</owners>
+    <title>LetsView</title>
+    <authors>WANGXU TECHNOLOGY CO., LIMITED</authors>
+	<projectUrl>https://letsview.com/</projectUrl>
+    <iconUrl></iconUrl>
+    <copyright>Copyright © 2025 WANGXU TECHNOLOGY CO., LIMITED. All Rights Reserved. 粤ICP备14077691号</copyright>
+    <tags>screen mirror share</tags>
+    <summary>LetsView - Your Screen Mirroring Expert,</summary>
+    <description>share screens between Windows, Mac, iOS, Android and TV.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

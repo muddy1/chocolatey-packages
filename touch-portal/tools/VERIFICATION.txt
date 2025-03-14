@@ -5,3 +5,7 @@ in verifying that this package's contents are trustworthy.
 Users who wish to verify the authenticity of this package are able to do so by running the following command in powershell:
 
 ex: Get-FileHash 'C:\Path\To\Installer\Elk_0.4.0_windows_x86_64.msi' -Algorithm SHA256
+
+or
+
+open cmd and use command: checksum -t sha256 -f path\to\file
