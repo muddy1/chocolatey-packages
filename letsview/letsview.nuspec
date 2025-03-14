@@ -9,7 +9,7 @@
     <title>LetsView</title>
     <authors>WANGXU TECHNOLOGY CO., LIMITED</authors>
 	<projectUrl>https://letsview.com/</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/letsview/tools/icons/letsview.png</iconUrl>
     <copyright>Copyright © 2025 WANGXU TECHNOLOGY CO., LIMITED. All Rights Reserved. 粤ICP备14077691号</copyright>
     <tags>screen mirror share</tags>
     <summary>LetsView - Your Screen Mirroring Expert,</summary>

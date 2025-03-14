@@ -4,9 +4,9 @@
 $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'touch-portal*'
+  softwareName  = 'letsview*'
   fileType      = 'EXE'
-  silentArgs    = "/s"
+  silentArgs    = "/VERYSILENT /NORESTART"
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
 }
 
