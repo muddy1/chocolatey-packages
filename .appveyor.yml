@@ -41,6 +41,10 @@ environment:
   # Chocolatey API key - to push updated packages
   api_key:
     secure: SAQ7hRBNsqyJJygeAIRR5LiSzxcjE7yhC0y4/xUOz5C8IDp1vLtVGiMkTj6vPyYO
+    
+  # VirusTotal API key
+  VT_APIKEY:
+    secure: Y/i5myVyft6hO6EL2mUviy8gI15uPbJkJmisGPMoeID2875q1f8/NiSJfRZaDQztnKrrQpOoflVR/f7RDEXnUPq1bvKiBgX4f4V+6xAkiDI=
 
   #Chocolatey version we want to use when checking for updates (usually latest).
   choco_version: '2.2.2'
