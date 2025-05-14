@@ -1,4 +1,4 @@
-[![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/skull1.ico)](#)
+<p style="text-align: center;">[![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/skull1.ico)](#)</p>
 
 ## Icons
 
