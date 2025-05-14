@@ -1,4 +1,4 @@
-[![](http://transparent-favicon.info/favicon.ico)](#)
+[![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/skull1.ico)](#)
 
 ## Icons
 
