@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>intel-chipset-inf</id>
+    <version>10.1.20020.8623</version>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/manual/intel-chipset-inf/intel-logo.png</iconUrl>
+	<tags>intel chipset inf utility</tags>
+    <packageSourceUrl>https://downloadmirror.intel.com/843223/SetupChipset.exe</packageSourceUrl>
+    <owners>muddy1</owners>
+    <title>Chipset INF Utility</title>
+    <authors>Intel Corporation</authors>
+	<projectUrl>https://www.intel.com/content/www/us/en/download/19347/chipset-inf-utility.html</projectUrl>
+	<mailingListUrl>https://www.intel.com/content/www/us/en/my-intel/subscription-center.html</mailingListUrl>
+	<docsUrl>https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1xr6h</docsUrl>
+	<licenseUrl>https://cdrdv2-public.intel.com/840386/intel-eula--distribution-only-.pdf</licenseUrl>
+	<releaseNotes>The Intel Chipset Device Software installs the Windows* INF files. An INF is a text file that provides the operating system with information about a piece of hardware on the system. In the case of the current Intel Chipset Device Software, that information is primarily the product name for the piece of hardware. This allows the operating system to show the correct name for that piece of hardware in Device Manager.
+
+
+Note: The Intel Chipset Device Software does not install drivers for AGP or USB. Do not download this utility if your device manufacturer is recommending it to correct an "AGP driver," "AGP GART," or "USB driver" issue; it will not correct your issue.
+
+Supported operating systems:
+
+  Microsoft Windows Server 2012 R2 x64
+
+  Microsoft Windows 10
+
+  Microsoft Windows 10 x64
+
+  Microsoft Windows 11 x64
+
+  Microsoft Windows Server 2016 x64
+
+  Microsoft Windows Server 2019 x64
+
+  Microsoft Windows Server 2022 x64
+
+  Microsoft Windows Server 2025 x64
+
+
+Keywords: 82801, ICH, MCH, chipset
+
+
+﻿About Intel® drivers
+
+The driver or software for your Intel® component might have been changed or replaced by the computer manufacturer. We recommend you work with your computer manufacturer before installing our driver so you don’t lose features or customizations.
+
+
+See list of manufacturers’ Support websites.
+This download is valid for the product(s) listed below.
+
+    Intel® H170 Chipset
+    Mobile Intel® HM175 Chipset
+    Intel® B150 Chipset
+    Intel® Q170 Chipset
+    Mobile Intel® QM170 Chipset
+    Intel® Q150 Chipset
+    Intel® H310 Chipset
+    Intel® H110 Chipset
+    Mobile Intel® HM170 Chipset
+    Mobile Intel® QM175 Chipset
+    Intel® Z170 Chipset</releaseNotes>
+    <copyright>Copyright (c) 1998-2025, Intel Corporation</copyright>
+    <summary>Intel Chipset INF Utility</summary>
+    <description>The Intel Chipset Device Software installs the Windows* INF files. An INF is a text file that provides the operating system with information about a piece of hardware on the system. In the case of the current Intel Chipset Device Software, that information is primarily the product name for the piece of hardware. This allows the operating system to show the correct name for that piece of hardware in Device Manager.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

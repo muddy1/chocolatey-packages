@@ -1,0 +1,34 @@
+﻿From: https://cdrdv2-public.intel.com/840386/intel-eula--distribution-only-.pdf
+
+LICENSE
+
+EXHIBIT “A”
+INTEL SOFTWARE LICENSE AGREEMENT
+(Final, Single User)
+IMPORTANT - READ BEFORE COPYING, INSTALLING OR USING.
+Do not use or load software from this site or any associated materials (collectively, the
+"Software") until you have carefully read the following terms and conditions. By loading
+or using the Software, you agree to the terms of this Agreement. If you do not wish to so
+agree, do not install or use the Software.
+LICENSE. You may copy the Software onto a single computer for your personal, or
+internal business purpose use, and you may make one back-up copy of the Software,
+subject to these conditions:
+• You may not copy, modify, rent, sell, distribute or transfer any part of the
+Software except as provided in this Agreement, and you agree to prevent
+unauthorized copying of the Software.
+• You may not reverse engineer, decompile, or disassemble the Software.
+• You may not sublicense or permit simultaneous use of the Software by more
+than one user.
+• The Software may contain the software or other property of third party
+suppliers, some of which may be identified in, and licensed in accordance with,
+any enclosed “license.txt” file or other text or file.
+OWNERSHIP OF SOFTWARE AND COPYRIGHTS. Title to all copies of the Software
+remains with Intel or its suppliers. The Software is copyrighted and protected by the
+laws of the United States and other countries, and international treaty provisions. You
+may not remove any copyright notices from the Software. Intel may make changes to the
+Software, or to items referenced therein, at any time without notice, but is not obligated
+to support or update the Software. Except as otherwise expressly provided, Intel grants
+no express or implied right under Intel patents, copyrights, trademarks, or other
+intellectual property rights. You may transfer the Software only if the recipient agrees to
+be fully bound by these terms and if you retain no copies of the Software
+

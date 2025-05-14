@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dismgui</id>
+    <version>4.0</version>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/icons/dism.gui.png</iconUrl>
+	<tags>dism gui microsoft</tags>
+    <packageSourceUrl>https://github.com/muddy1/au-packages/tree/master/stable/dismgui</packageSourceUrl>
+    <owners>muddy1</owners>
+    <title>DISM Gui</title>
+    <authors>mikecel79</authors>
+	<projectUrl>https://github.com/mikecel79/DISMGUI</projectUrl>
+	<mailingListUrl>https://mikecel79.wordpress.com</mailingListUrl>
+	<docsUrl>https://mikecel79.wordpress.com/2014/09/25/dism-gui-4-0-beta-available/</docsUrl>
+	<bugTrackerUrl>https://github.com/mikecel79/DISMGUI/issues</bugTrackerUrl>
+	<releaseNotes>https://mikecel79.wordpress.com/2014/09/25/dism-gui-4-0-beta-available/</releaseNotes>
+    <copyright>markcel79 2017</copyright>
+    <summary>Graphical DISM tool</summary>
+    <description>DISM GUI is a graphical interface for the DISM command line utility written in the .NET. DISM GUI allows you to mount and dismount WIMs, manager drivers, features and packages. </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vroid-studio</id>
+    <version>2.1.5</version>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/stable@main/vroid-studio/logo.png</iconUrl>
+	<tags>3D model modeling art studio</tags>
+    <packageSourceUrl>https://github.com/muddy1/stable/tree/main/vroid-studio</packageSourceUrl>
+    <owners>muddy1</owners>
+    <title>Vroid Studio</title>
+    <authors>pixiv</authors>
+	<projectUrl>https://vroid.com/</projectUrl>
+	<mailingListUrl>https://vroid.pixiv.help/hc/en-us/articles/360012329953-I-want-to-sign-up-for-VRoid-newsletter</mailingListUrl>
+	<docsUrl>https://vroid.pixiv.help/hc/en-us/sections/360002629313-Basic-Tutorials</docsUrl>
+	<bugTrackerUrl>https://vroid.pixiv.help/hc/en-us/sections/360002847333--Bugs-and-malfunctions</bugTrackerUrl>
+	<licenseUrl>https://policies.pixiv.net/en.html#vroidhub</licenseUrl>
+	<releaseNotes>https://vroid.pixiv.help/hc/en-us/sections/900000861806--Release-Notes</releaseNotes>
+    <copyright>Copyright pixiv, Inc.</copyright>
+    <summary>3D modeling software</summary>
+    <description>The VRoid project is a 3D business by Pixiv Inc. with the philosophy of "Make Creativities More Enjoyable"
+The world of "one person, one avatar" where everyone has their own unique 3D character model and can utilize that character for creative activities and communication. Our mission is to realize that future with the power of technology and creativity.
+
+VRoid was born from the 3D modeling software "VRoid Studio" that allows you to create characters as if you were drawing a picture. Currently, we are developing in various fields such as this software, smartphone apps that allow you to easily create avatars, platforms that allow you to post 3D models, developer kits for linking with them, and brand businesses that propose avatar fashion to the world. going.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

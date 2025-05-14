@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gamesavemanager</id>
+    <version>3.1.571.0</version>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/icons/gamesave.png</iconUrl>
+	<tags>steam game save manager gui</tags>
+    <packageSourceUrl>https://github.com/muddy1/au-packages/tree/master/stable/gamesavemanager</packageSourceUrl>
+    <owners>muddy1</owners>
+    <title>GameSave Manager</title>
+    <authors>InsaneMatt</authors>
+	<projectUrl>https://www.gamesave-manager.com/</projectUrl>
+	<mailingListUrl>https://forum.gamesave-manager.com/</mailingListUrl>
+	<docsUrl>https://forum.gamesave-manager.com/</docsUrl>
+	<bugTrackerUrl>https://forum.gamesave-manager.com/viewforum.php?f=3</bugTrackerUrl>
+	<licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+	<releaseNotes>https://www.gamesave-manager.com/whatsnew/client/153df7ad-3951-44da-bbd0-2fbddd8de447/</releaseNotes>
+    <copyright>Copyright © 2009-2024. All rights reserved</copyright>
+    <summary>The easy way to backup, transfer and share your PC save data.</summary>
+    <description>Perhaps you have been a victim of file corruption, which also victimized your game saves? Maybe you wish to transfer your game save(s) to your new machine or take it with you to a friend's?
+
+With GameSave Manager, you can easily backup, restore, and transfer your game save(s).
+
+No longer do you need to manually track through all of those different directories to backup/restore/transfer your game saves, making it great for those who like to share game save progress with friends/family, format frequently, paranoid about data loss, etc.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

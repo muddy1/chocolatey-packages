@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>live2d-cubism</id>
+    <version>5.2.02</version>
+	<copyright>© 2010 - 2025 Live2D Inc.</copyright>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/stable@main/live2d/cubism-logo.png</iconUrl>
+	<tags>live2d animation art</tags>
+    <packageSourceUrl>https://github.com/muddy1/stable/tree/main/live2d</packageSourceUrl>
+    <owners>muddy1</owners>
+    <title>Live2d Cubism</title>
+    <authors>Live2d Inc.</authors>
+	<projectUrl>https://www.live2d.com/</projectUrl>
+	<mailingListUrl>https://community.live2d.com/</mailingListUrl>
+	<docsUrl>https://docs.live2d.com/en/</docsUrl>
+	<bugTrackerUrl>https://community.live2d.com/discussions/tagged/bug/p1</bugTrackerUrl>
+	<releaseNotes>https://docs.live2d.com/en/cubism-editor-manual/new-function5-2/</releaseNotes>
+	<licenseUrl>https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_en.html</licenseUrl>
+	<summary>Software that directly animates your original drawings.</summary>
+    <description>Live2D is the industry standard tool for 2D real-time expression, chosen by professional creators around the world. It is widely used in mobile apps, console games, VTuber streaming, and animations.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
