@@ -4,9 +4,9 @@
   <metadata>
     <id>dismgui</id>
     <version>4.0</version>
-	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/icons/dism.gui.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/dism.gui.png</iconUrl>
 	<tags>dism gui microsoft</tags>
-    <packageSourceUrl>https://github.com/muddy1/au-packages/tree/master/stable/dismgui</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/dismgui</packageSourceUrl>
     <owners>muddy1</owners>
     <title>DISM Gui</title>
     <authors>mikecel79</authors>
@@ -23,3 +23,4 @@
     <file src="tools\**" target="tools" />
   </files>
 </package>
+
