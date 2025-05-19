@@ -3,4 +3,4 @@
 </p>
 <p align="center">## Icons</p>
 
-Images / Icons go here. This is done so that the image isn't being copied around inside the auto packages
+Images / Icons go here. This is done so that the image is not being copied inside the auto packages
