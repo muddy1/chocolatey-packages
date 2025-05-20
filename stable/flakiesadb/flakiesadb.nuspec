@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>flakiesadb</id>
-    <version>2.1.0.0</version>
+    <version>2.1.0</version>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/flakies-adb.png</iconUrl>
 	<tags>adb gui android</tags>
     <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/flakiesadb</packageSourceUrl>
@@ -19,10 +19,13 @@
     <copyright>Flakie 2021</copyright>
     <summary>ADB GUI for controlling Android devices.</summary>
     <description>
-	![](https://flakie.co.uk/wp-content/uploads/flakie-adb-app-v2-1.jpg)
+	![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/flakie-adb-app-v2-1.jpg)
 	A Windows GUI wrapper for ADB that allows APK install, update, uninstall and pull/download to desktop. Supports rebooting ADB devices, custom ADB Shell commands, remote control of an Android device with scrcpy and video recording of the remote session.
+	
+	scrcpy adb remote control app is recommended 
+	
 	##Works with##
-	*Amazon FireTV</description>
+	* Amazon FireTV</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
