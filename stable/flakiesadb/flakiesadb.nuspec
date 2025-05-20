@@ -18,7 +18,11 @@
 	<releaseNotes>https://flakie.co.uk/downloads/Flakie-ADB-GUI-V2.1-Changelog.txt</releaseNotes>
     <copyright>Flakie 2021</copyright>
     <summary>ADB GUI for controlling Android devices.</summary>
-    <description>A Windows GUI wrapper for ADB that allows APK install, update, uninstall and pull/download to desktop. Supports rebooting ADB devices, custom ADB Shell commands, remote control of an Android device with scrcpy and video recording of the remote session.</description>
+    <description>
+	![](https://flakie.co.uk/wp-content/uploads/flakie-adb-app-v2-1.jpg)
+	A Windows GUI wrapper for ADB that allows APK install, update, uninstall and pull/download to desktop. Supports rebooting ADB devices, custom ADB Shell commands, remote control of an Android device with scrcpy and video recording of the remote session.
+	##Works with##
+	*Amazon FireTV</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
