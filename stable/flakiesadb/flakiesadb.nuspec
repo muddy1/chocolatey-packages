@@ -14,7 +14,7 @@
 	<mailingListUrl>https://flakie.co.uk/my-adb-gui-app/</mailingListUrl>
 	<docsUrl>https://flakie.co.uk/my-adb-gui-app/</docsUrl>
 	<bugTrackerUrl>https://flakie.co.uk/my-adb-gui-app/</bugTrackerUrl>
-	<licenseUrl>https://flakie.co.uk/my-adb-gui-app/</licenseUrl>
+	<licenseUrl>https://flakie.co.uk/</licenseUrl>
 	<releaseNotes>https://flakie.co.uk/downloads/Flakie-ADB-GUI-V2.1-Changelog.txt</releaseNotes>
     <copyright>Flakie 2021</copyright>
     <summary>ADB GUI for controlling Android devices.</summary>
