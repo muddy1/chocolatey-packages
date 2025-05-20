@@ -22,7 +22,7 @@
 	![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/flakie-adb-app-v2-1.jpg)
 	A Windows GUI wrapper for ADB that allows APK install, update, uninstall and pull/download to desktop. Supports rebooting ADB devices, custom ADB Shell commands, remote control of an Android device with scrcpy and video recording of the remote session.
 	
-	scrcpy adb remote control app is recommended to use alongside
+	##scrcpy adb remote control app is recommended to use alongside##
 	
 	##Works with##
 	* Amazon FireTV</description>
