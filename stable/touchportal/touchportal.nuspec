@@ -4,9 +4,9 @@
   <metadata>
     <id>touch-portal</id>
     <version>4.4</version>
-	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/icons/TPLogo.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/TPLogo.png</iconUrl>
 	<tags>obs remote control pc</tags>
-    <packageSourceUrl>https://github.com/muddy1/au-packages/tree/master/stable/touch-portal</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/touchportal</packageSourceUrl>
     <owners>muddy1</owners>
     <title>Touch Portal</title>
     <authors>Rils</authors>

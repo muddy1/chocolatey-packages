@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'touch-portal*'
+  softwareName  = 'touchportal*'
   fileType      = 'EXE'
   silentArgs    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
   validExitCodes= @(0, 3010, 1605, 1614, 1641)

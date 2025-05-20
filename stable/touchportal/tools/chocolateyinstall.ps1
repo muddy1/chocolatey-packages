@@ -9,7 +9,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
 
-  softwareName  = 'touch-portal*'
+  softwareName  = 'touchportal*'
 
   checksum      = '3AE3B301562A3D67319FA70DD10BBFB07B461E05F10DA1A2C897A6B093C5F1C4'
   checksumType  = 'sha256'
