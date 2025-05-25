@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = '*'
+  softwareName  = 'steam*'
   fileType      = 'EXE'
-  silentArgs    = "/s"
+  silentArgs    = "/S"
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
 }
 

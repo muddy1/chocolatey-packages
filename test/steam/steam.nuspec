@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>steam</id>
+    <version>1747701111</version>
+	<iconUrl></iconUrl>
+	<tags>steam client valve</tags>
+    <packageSourceUrl></packageSourceUrl>
+    <owners>Valve Corporation</owners>
+    <title>Steam</title>
+    <authors>Valve</authors>
+	<projectUrl>https://store.steampowered.com/</projectUrl>
+	<mailingListUrl>https://developer.valvesoftware.com/wiki/Valve_Mailing_List</mailingListUrl>
+	<docsUrl>https://partner.steamgames.com/doc/home</docsUrl>
+	<bugTrackerUrl>https://steamcommunity.com/groups/SteamClientBeta/discussions/0/</bugTrackerUrl>
+	<licenseUrl>https://store.steampowered.com/subscriber_agreement/</licenseUrl>
+	<releaseNotes>https://store.steampowered.com/oldnews/?feed=steam_client</releaseNotes>
+    <copyright>© 2025 Valve Corporation</copyright>
+    <summary>Steam is the ultimate destination for playing, discussing, and creating games.</summary>
+    <description>
+	### Access Games Instantly
+
+	With nearly 30,000 games from AAA to indie and everything in-between. Enjoy exclusive deals, automatic game updates, and other great perks.
+
+    ### Join the Community
+	
+	Meet new people, join groups, form clans, chat in-game and more! With over 100 million potential friends (or enemies), the fun never stops.
+	
+	### Release your game
+	
+	Steamworks is the set of tools and services that help game developers and publishers get the most out of distributing games on Steam. 
+	</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
