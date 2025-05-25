@@ -4,9 +4,9 @@
   <metadata>
     <id>steam</id>
     <version>1747701111</version>
-	<iconUrl></iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/steam.png</iconUrl>
 	<tags>steam client valve</tags>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/steam</packageSourceUrl>
     <owners>Valve Corporation</owners>
     <title>Steam</title>
     <authors>Valve</authors>
