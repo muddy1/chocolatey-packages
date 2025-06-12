@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.02.exe'
+$url        = 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'live2d*'
 
-  checksum      = '73730B93063FD00B6803363AA8C58EB5FB5F36B9E9EF5298EFA2C86844C46F9F'
+  checksum      = 'B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E'
   checksumType  = 'sha256'
 
   silentArgs    = "/S"
