@@ -7,7 +7,7 @@
 	<copyright>© 2010 - 2025 Live2D Inc.</copyright>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/cubism-logo.png</iconUrl>
 	<tags>live2d animation art</tags>
-    <packageSourceUrl>https://github.com/muddy1/stable/tree/main/live2d</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/live2d</packageSourceUrl>
     <owners>muddy1</owners>
     <title>Live2d Cubism</title>
     <authors>Live2d Inc.</authors>
