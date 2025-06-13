@@ -3,11 +3,7 @@ $toolsDir 			   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $pp                    = Get-PackageParameters
 $shortcutName          = 'flakiesADB.lnk'
 $url                   = 'https://flakie.co.uk/downloads/FlakieADBGUI.zip'
-$exepath               = ([System.IO.Path]::Combine($toolsDir,  'dism gui.exe'))
-$sa                    = ""
-
-
-$sa += if ($pp.InstallDir) { " /InstallDirectoryPath=" + $pp.InstallDir }
+$exepath               = ([System.IO.Path]::Combine($toolsDir,  'FlakieADBGUI.exe'))
 
 $packageArgs = @{
   Url           = $url
@@ -20,13 +16,6 @@ $packageArgs = @{
 Install-ChocolateyZipPackage @packageArgs
 
 
-if ($pp.InstallDir) {
-  $installPath = $pp.InstallDir
-}
-else {
-  $installPath = Get-AppInstallLocation $softwareName
-}
-
 if ($pp['desktopicon']) {
 	$desktopicon = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
 	Write-Host -ForegroundColor green 'Adding ' $desktopicon
@@ -37,3 +26,4 @@ if (!$pp['nostart']) {
 	$starticon = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
 	Write-Host -ForegroundColor green 'Adding ' $starticon
 	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
+}

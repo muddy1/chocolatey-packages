@@ -1,20 +1,22 @@
 ﻿$ErrorActionPreference = 'Stop';
+$toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$shortcutName          = 'flakiesADB.lnk'
+$desktopicon           = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
+$starticon             = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
 
-$packageName = 'flakiesadbgui'
-$url         = 'https://flakie.co.uk/downloads/FlakieADBGUI.zip'
-$checksum    = 'CCB72D93BF7FD582E9AC10A43692E83E3B2D4B1B5495CD0D4EF2E9A36B212975'
-$installDir  = '{0}\flakiesadb\' -f $Env:SystemDrive
-
-$packageArgs = @{
-  packageName    = $packageName
-  url            = $url
-  checksum       = $checksum
-  checksumType   = 'sha256'
-  unzipLocation  = $installDir
+if (Test-Path $desktopicon) {
+	Remove-Item $desktopicon
+	Write-Host -ForegroundColor green 'Removed ' $desktopicon
+} else {
+	Write-Host -ForegroundColor yellow 'Did not find ' $desktopicon
 }
 
-Install-ChocolateyZipPackage @packageArgs
-
+if (Test-Path $starticon) {
+	Remove-Item $starticon
+	Write-Host -ForegroundColor green 'Removed ' $starticon
+} else {
+	Write-Host -ForegroundColor yellow 'Did not find ' $starticon
+}
 
 
 
