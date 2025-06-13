@@ -1,6 +1,7 @@
-﻿$ErrorActionPreference = 'Stop'
+﻿
+$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.vroid.com/dist/fowv03gyNN/VRoidStudio-v2.1.6-win.exe'
+$url        = 'https://www.touch-portal.com/downloads/TouchPortal_Setup_release.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -8,18 +9,16 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
 
-  softwareName  = 'vroid-studio*'
+  softwareName  = 'touchportal*'
 
-  checksum      = '831E151BCB9C0FF52E760A0D6D005974A80E9A6E9326A0397E91A359A2C7471E'
+  checksum      = '7BD419055AE7C35DB20F700B31144D8FC538937DB0C848F614DB82E081C93BF3'
   checksumType  = 'sha256'
 
-  silentArgs    = "/SP- /VERYSILENT"
+  silentArgs    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
   validExitCodes= @(0, 3010, 1641)
 }
 
 Install-ChocolateyPackage @packageArgs
-
-
 
 
 

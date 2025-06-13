@@ -1,28 +1,17 @@
-Uninstall-ChocolateyPackage @packageArgs
-﻿$ErrorActionPreference = 'Stop'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://github.com/Nexus-Mods/Vortex/releases/download/v1.13.7/vortex-setup-1.13.7.exe'
-$fileName = [System.IO.Path]::GetFileName($url)
-$fileLocation = Join-Path $toolsDir $fileName
-$checksum = ''
+$ErrorActionPreference = 'Stop'
 
-$webFileArgs = @{
-  packageName  = $env:ChocolateyPackageName
-  fileFullPath = $fileLocation
-  url          = $url
-  checksum     = $checksum
-  checksumType = 'sha256'
-}
+$packageName = 'vortex'
+$programUninstallEntryName = 'Vortex*'
 
-Get-ChocolateyWebFile @webFileArgs
+$registry = Get-UninstallRegistryKey -SoftwareName $programUninstallEntryName
+$file = $registry.UninstallString -replace ('/allusers', '')
 
 $packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  softwareName   = 'vortex'
-  fileType       = 'EXE'
-  file           = $fileLocation
+  packageName    = $packageName
+  fileType       = 'exe'
   silentArgs     = '/S'
   validExitCodes = @(0)
+  file           = $file
 }
 
 Uninstall-ChocolateyPackage @packageArgs

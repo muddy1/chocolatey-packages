@@ -4,9 +4,9 @@
   <metadata>
     <id>intel-chipset-inf</id>
     <version>10.1.20020.8623</version>
-	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/manual/intel-chipset-inf/intel-logo.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/icons/intel-logo.png</iconUrl>
 	<tags>intel chipset inf utility</tags>
-    <packageSourceUrl>https://downloadmirror.intel.com/843223/SetupChipset.exe</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/au-packages/tree/master/stable/intel-chipset-inf</packageSourceUrl>
     <owners>muddy1</owners>
     <title>Chipset INF Utility</title>
     <authors>Intel Corporation</authors>

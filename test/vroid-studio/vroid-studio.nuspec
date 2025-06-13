@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vroid-studio</id>
-    <version>2.1.5</version>
-	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/stable@main/vroid-studio/logo.png</iconUrl>
+    <version>2.1.6</version>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/logo.png</iconUrl>
 	<tags>3D model modeling art studio</tags>
-    <packageSourceUrl>https://github.com/muddy1/stable/tree/main/vroid-studio</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/vroid-studio</packageSourceUrl>
     <owners>muddy1</owners>
     <title>Vroid Studio</title>
     <authors>pixiv</authors>
