@@ -24,10 +24,10 @@
 	
 ##scrcpy adb remote control app is recommended to use alongside this program, and can be found on github
 	
-## Tested on
+##Tested on
 * Amazon FireTV
 
-## Package Parameters
+##Package Parameters
 The following package parameters can be set:
 
 - `/NOSTART`     - Do not add a start menu item
