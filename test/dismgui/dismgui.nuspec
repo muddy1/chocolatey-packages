@@ -18,18 +18,20 @@
     <copyright>markcel79 2017</copyright>
     <summary>Graphical DISM tool</summary>
     <description>
-	![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/DISM-GUI.png)
+	![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/DISM-GUI.png)
 	
 	DISM GUI is a graphical interface for the DISM command line utility written in the .NET. DISM GUI allows you to mount and dismount WIMs, manager drivers, features and packages. 
 	
-	## Package Parameters
+## Package Parameters
 The following package parameters can be set:
 
- * `/NOSTART` - Do not add a start menu item
- * `/DesktopIcon` - Add a desktop shorcut
+- `/NOSTART`     - Do not add a start menu item
+- `/DesktopIcon` - The Desktop icon will be installed to the common desktop. (Install only.)
 
-To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+These parameters can be passed to the installer with the use of `-params`.
+For example :
+`choco install adobereader -params '"/DesktopIcon"'`
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
 	</description>
   </metadata>
   <files>

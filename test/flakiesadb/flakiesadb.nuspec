@@ -19,13 +19,25 @@
     <copyright>Flakie 2021</copyright>
     <summary>ADB GUI for controlling Android devices.</summary>
     <description>
-	![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/flakie-adb-app-v2-1.jpg)
+	![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/flakie-adb-app-v2-1.jpg)
 	A Windows GUI wrapper for ADB that allows APK install, update, uninstall and pull/download to desktop. Supports rebooting ADB devices, custom ADB Shell commands, remote control of an Android device with scrcpy and video recording of the remote session.
 	
-	scrcpy adb remote control app is recommended to use alongside
+##scrcpy adb remote control app is recommended to use alongside this program, and can be found on github
 	
-	Works with
-	* Amazon FireTV</description>
+## Tested on
+* Amazon FireTV
+
+## Package Parameters
+The following package parameters can be set:
+
+- `/NOSTART`     - Do not add a start menu item
+- `/DesktopIcon` - The Desktop icon will be installed to the common desktop. (Install only.)
+
+These parameters can be passed to the installer with the use of `-params`.
+For example :
+`choco install adobereader -params '"/DesktopIcon"'`
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
+</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
