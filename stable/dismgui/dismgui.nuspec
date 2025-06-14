@@ -22,7 +22,7 @@
 	
 	DISM GUI is a graphical interface for the DISM command line utility written in the .NET. DISM GUI allows you to mount and dismount WIMs, manager drivers, features and packages. 
 	
-## Package Parameters
+##Package Parameters
 The following package parameters can be set:
 
 - `/NOSTART`     - Do not add a start menu item
