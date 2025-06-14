@@ -22,12 +22,12 @@
 	![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/flakie-adb-app-v2-1.jpg)
 	A Windows GUI wrapper for ADB that allows APK install, update, uninstall and pull/download to desktop. Supports rebooting ADB devices, custom ADB Shell commands, remote control of an Android device with scrcpy and video recording of the remote session.
 	
-##scrcpy adb remote control app is recommended to use alongside this program, and can be found on github
+## scrcpy adb remote control app is recommended to use alongside this program, and can be found on github
 	
-##Tested on
+## Tested on
 * Amazon FireTV
 
-##Package Parameters
+## Package Parameters
 The following package parameters can be set:
 
 - `/NOSTART`     - Do not add a start menu item
