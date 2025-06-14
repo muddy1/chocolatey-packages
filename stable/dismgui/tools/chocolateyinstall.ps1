@@ -4,10 +4,6 @@ $pp                    = Get-PackageParameters
 $shortcutName          = 'dismgui.lnk'
 $url                   = 'https://github.com/mikecel79/DISMGUI/releases/download/4.0/DISM.GUI.zip'
 $exepath               = ([System.IO.Path]::Combine($toolsDir,  'dism gui.exe'))
-$sa                    = ""
-
-
-$sa += if ($pp.InstallDir) { " /InstallDirectoryPath=" + $pp.InstallDir }
 
 $packageArgs = @{
   Url           = $url
