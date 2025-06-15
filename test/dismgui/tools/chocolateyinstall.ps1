@@ -4,6 +4,7 @@ $pp                    = Get-PackageParameters
 $shortcutName          = 'dismgui.lnk'
 $url                   = 'https://github.com/mikecel79/DISMGUI/releases/download/4.0/DISM.GUI.zip'
 $exepath               = ([System.IO.Path]::Combine($toolsDir,  'dism gui.exe'))
+$softwareName          = 'Dism GUI'
 
 $packageArgs = @{
   Url           = $url
@@ -27,6 +28,9 @@ if (!$pp['nostart']) {
 	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
 }
 
+$installDir = if ($pp['InstallDir']) { $pp['InstallDir'] } else { $toolsDir }
+
+Write-Host "Dism GUI is going to be installed in '$installDir'"
 
 
 
