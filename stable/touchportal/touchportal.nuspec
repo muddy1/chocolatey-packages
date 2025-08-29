@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>touchportal</id>
-    <version>4.4.0.20250804</version>
+    <version>4.4.0.20250815</version>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/TPLogo.png</iconUrl>
 	<tags>obs remote control pc</tags>
     <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/touchportal</packageSourceUrl>
