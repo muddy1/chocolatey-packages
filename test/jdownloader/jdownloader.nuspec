@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jdownloader</id>
+    <version></version>
+	<iconUrl></iconUrl>
+	<tags>jdownloader download manager java idm</tags>
+    <packageSourceUrl></packageSourceUrl>
+    <owners>muddy1</owners>
+    <title>JDownloader</title>
+    <authors>JDownloader Community</authors>
+	<projectUrl>https://jdownloader.org/home/index</projectUrl>
+	<mailingListUrl>https://board.jdownloader.org/?langid=1</mailingListUrl>
+	<docsUrl>https://jdownloader.org/knowledge/wiki/start</docsUrl>
+	<bugTrackerUrl>https://support.jdownloader.org/en?%2FTickets%2FSubmit=</bugTrackerUrl>
+	<licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html#license-text</licenseUrl>
+	<releaseNotes>https://jdownloader.org/changes/index</releaseNotes>
+    <copyright>Copyright © 2009-2025 JDownloader Community</copyright>
+    <summary>Free download manager</summary>
+    <description>JDownloader is a free, open-source download management tool with a huge community that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day! </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
