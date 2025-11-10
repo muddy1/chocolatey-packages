@@ -1,0 +1,616 @@
+PS C:\Users\muddy\Desktop\chocolatey-test-environment> choco.exe install -fdvy live2d-cubism  --allow-downgrade --source "'c:\\packages;http://chocolatey.org/api/v2/'"
+Chocolatey v2.5.1
+Chocolatey is running on Windows v 10.0.26100.0
+Attempting to delete file "C:/ProgramData/chocolatey/choco.exe.old".
+Attempting to delete file "C:\ProgramData\chocolatey\choco.exe.old".
+Command line: "C:\ProgramData\chocolatey\choco.exe" install -fdvy live2d-cubism --allow-downgrade --source 'c:\\packages;http://chocolatey.org/api/v2/'
+Received arguments: install -fdvy live2d-cubism --allow-downgrade --source 'c:\\packages;http://chocolatey.org/api/v2/'
+RemovePendingPackagesTask is now ready and waiting for PreRunMessage.
+Sending message 'PreRunMessage' out if there are subscribers...
+[Pending] Removing all pending packages that should not be considered installed...
+Performing validation checks.
+Global Configuration Validation Checks:
+ - Package Exit Code / Exit On Reboot = Checked
+System State Validation Checks:
+ Reboot Requirement Checks:
+ - Pending Computer Rename = Checked
+ - Pending Component Based Servicing = Checked
+ - Pending Windows Auto Update = Checked
+ - Pending File Rename Operations = Ignored
+ - Pending Windows Package Installer = Checked
+ - Pending Windows Package Installer SysWow64 = Checked
+Cache Folder Lockdown Checks:
+ - Elevated State = Checked
+ - Folder Exists = Checked
+ - Folder lockdown = Checked
+The source 'c:\\packages;http://chocolatey.org/api/v2/' evaluated to a 'normal' source type
+
+NOTE: Hiding sensitive configuration data! Please double and triple
+ check to be sure no sensitive data is shown, especially if copying
+ output to a gist for review.
+Configuration: CommandName='install'|
+CacheLocation='C:\Users\muddy\AppData\Local\Temp\chocolatey'|
+CommandExecutionTimeoutSeconds='2700'|WebRequestTimeoutSeconds='30'|
+Sources='c:\\packages;http://chocolatey.org/api/v2/'|
+ExplicitSources='c:\\packages;http://chocolatey.org/api/v2/'|
+SourceType='normal'|IncludeConfiguredSources='False'|
+ShowOnlineHelp='False'|Debug='True'|Verbose='True'|Trace='False'|
+Force='True'|Noop='False'|HelpRequested='False'|
+UnsuccessfulParsing='False'|RegularOutput='True'|QuietOutput='False'|
+PromptForConfirmation='False'|DisableCompatibilityChecks='False'|
+AcceptLicense='True'|AllowUnofficialBuild='False'|
+Input='live2d-cubism'|
+AllVersions='False'|SkipPackageInstallProvider='False'|
+SkipHookScripts='False'|PackageNames='live2d-cubism'|
+Prerelease='False'|
+ForceX86='False'|OverrideArguments='False'|NotSilent='False'|
+ApplyPackageParametersToDependencies='False'|
+ApplyInstallArgumentsToDependencies='False'|IgnoreDependencies='False'|
+UseHttpCache='True'|CacheExpirationInMinutes='30'|
+AllowDowngrade='True'|
+ForceDependencies='False'|PinPackage='False'|IncludeHeaders='False'|
+Information.PlatformType='Windows'|
+Information.PlatformVersion='10.0.26100.0'|
+Information.PlatformName='Windows 11'|
+Information.ChocolateyVersion='2.5.1.0'|
+Information.ChocolateyProductVersion='2.5.1'|
+Information.FullName='choco, Version=2.5.1.0, Culture=neutral, PublicKeyToken=79d02ea9cad655eb'|
+
+Information.Is64BitOperatingSystem='True'|
+Information.Is64BitProcess='True'|Information.IsInteractive='True'|
+Information.UserName='muddy'|Information.UserDomainName='X0WF3D'|
+Information.IsUserAdministrator='True'|
+Information.IsUserSystemAccount='False'|
+Information.IsUserRemoteDesktop='False'|
+Information.IsUserRemote='False'|Information.IsProcessElevated='True'|
+Information.IsLicensedVersion='False'|
+Information.IsLicensedAssemblyLoaded='False'|
+Information.LicenseType='Foss'|
+Information.CurrentDirectory='C:\Users\muddy\Desktop\chocolatey-test-environment'|
+
+Features.AutoUninstaller='True'|Features.ChecksumFiles='True'|
+Features.AllowEmptyChecksums='False'|
+Features.AllowEmptyChecksumsSecure='True'|
+Features.FailOnAutoUninstaller='False'|
+Features.FailOnStandardError='False'|Features.UsePowerShellHost='True'|
+Features.LogEnvironmentValues='False'|Features.LogWithoutColor='False'|
+Features.VirusCheck='False'|
+Features.FailOnInvalidOrMissingLicense='False'|
+Features.IgnoreInvalidOptionsSwitches='True'|
+Features.UsePackageExitCodes='True'|
+Features.UseEnhancedExitCodes='False'|
+Features.UseFipsCompliantChecksums='False'|
+Features.ShowNonElevatedWarnings='True'|
+Features.ShowDownloadProgress='True'|
+Features.StopOnFirstPackageFailure='False'|
+Features.UseRememberedArgumentsForUpgrades='False'|
+Features.IgnoreUnfoundPackagesOnUpgradeOutdated='False'|
+Features.SkipPackageUpgradesWhenNotInstalled='False'|
+Features.RemovePackageInformationOnUninstall='False'|
+Features.ExitOnRebootDetected='False'|
+Features.LogValidationResultsOnWarnings='True'|
+Features.UsePackageRepositoryOptimizations='True'|
+Features.UsePackageHashValidation='False'|
+ListCommand.LocalOnly='False'|
+ListCommand.IdOnly='False'|ListCommand.IncludeRegistryPrograms='False'|
+ListCommand.PageSize='25'|ListCommand.Exact='False'|
+ListCommand.ByIdOnly='False'|ListCommand.ByTagOnly='False'|
+ListCommand.IdStartsWith='False'|ListCommand.IgnorePinned='False'|
+ListCommand.OrderBy='Id'|ListCommand.OrderByPopularity='False'|
+ListCommand.ApprovedOnly='False'|
+ListCommand.DownloadCacheAvailable='False'|
+ListCommand.NotBroken='False'|
+ListCommand.IncludeVersionOverrides='False'|
+ListCommand.ExplicitPageSize='False'|
+ListCommand.ExplicitSource='False'|
+UpgradeCommand.FailOnUnfound='False'|
+UpgradeCommand.FailOnNotInstalled='False'|
+UpgradeCommand.NotifyOnlyAvailableUpgrades='False'|
+UpgradeCommand.ExcludePrerelease='False'|
+UpgradeCommand.IgnorePinned='False'|
+NewCommand.AutomaticPackage='False'|
+NewCommand.UseOriginalTemplate='False'|SourceCommand.Command='unknown'|
+SourceCommand.Priority='0'|SourceCommand.BypassProxy='False'|
+SourceCommand.AllowSelfService='False'|
+SourceCommand.VisibleToAdminsOnly='False'|
+FeatureCommand.Command='unknown'|ConfigCommand.Command='Unknown'|
+ApiKeyCommand.Command='Unknown'|PinCommand.Command='Unknown'|
+LicenseCommand.Command='Unknown'|OutdatedCommand.IgnorePinned='False'|
+ExportCommand.IncludeVersionNumbers='False'|Proxy.BypassOnLocal='True'|
+TemplateCommand.Command='unknown'|CacheCommand.Command='Unknown'|
+CacheCommand.RemoveExpiredItemsOnly='False'|
+_ Chocolatey:ChocolateyInstallCommand - Normal Run Mode _
+Installing the following packages:
+live2d-cubism
+By installing, you accept licenses for the packages.
+Process Tree: Chocolatey CLI => Chocolatey CLI => powershell => WindowsTerminal => dllhost => svchost => services
+Updating User Agent to 'Chocolatey Command Line/2.5.1 (dllhost, Chocolatey CLI) via NuGet Client/6.4.1 (Microsoft Windows NT 10.0.26100.0)'.
+Running list with the following filter = ''
+--- Start of List ---
+Process Tree: Chocolatey CLI => Chocolatey CLI => powershell => WindowsTerminal => dllhost => svchost => services
+Updating User Agent to 'Chocolatey Command Line/2.5.1 (dllhost, Chocolatey CLI) via NuGet Client/6.4.1 (Microsoft Windows NT 10.0.26100.0)'.
+Resolving resource PackageSearchResource for source C:\ProgramData\chocolatey\lib
+7zip 25.1.0
+7zip.install 25.1.0
+autohotkey.portable 2.0.19
+ccleaner 6.39.11548
+chatterino 2.5.4
+chocolatey 2.5.1
+chocolatey-au 1.0.0
+chocolatey-compatibility.extension 1.0.0
+chocolatey-core.extension 1.4.0
+chocolatey-dotnetfx.extension 1.0.1
+chocolatey-misc-helpers.extension 0.0.4
+chocolatey-windowsupdate.extension 1.0.5
+discord.install 1.0.9213
+dotnet4.7 4.7.2053.20190226
+dotnetfx 4.8.0.20220524
+gimp 3.0.6.1
+github-desktop 3.5.4
+jdownloader 2.0.0.2023
+KB2919355 1.0.20160915
+KB2919442 1.0.20160915
+KB2999226 1.0.20181019
+KB3033929 1.0.5
+KB3035131 1.0.3
+keybase 6.5.1
+leagueoflegends 116.0.1.3585
+notepadplusplus 8.8.7
+notepadplusplus.install 8.8.7
+nvidia-display-driver 581.80.0
+obs-studio.install 32.0.2
+opera-gx 123.0.5669.57
+steam 3.10.91.91241028
+thunderbird 144.0.1
+vagrant 2.4.9
+vcredist140 14.44.35211
+vcredist2015 14.0.24215.20170201
+vcredist2017 14.16.27052
+vlc 3.0.21
+vlc.install 3.0.21
+vortex 1.15.2
+--- End of List ---
+Resolving resource ListResource for source c:\\packages
+Resolving resource ListResource for source http://chocolatey.org/api/v2/
+[NuGet]   GET https://community.chocolatey.org/api/v2/$metadata
+[NuGet]   OK https://community.chocolatey.org/api/v2/$metadata 55ms
+[NuGet]   GET https://community.chocolatey.org/api/v2/Packages()?$filter=(tolower(Id) eq 'live2d-cubism') and IsLatestVersion&semVerLevel=2.0.0
+[NuGet]   OK https://community.chocolatey.org/api/v2/Packages()?$filter=(tolower(Id) eq 'live2d-cubism') and IsLatestVersion&semVerLevel=2.0.0 48ms
+Resolving resource DependencyInfoResource for source c:\\packages
+Resolving resource DependencyInfoResource for source http://chocolatey.org/api/v2/
+[NuGet]   GET https://community.chocolatey.org/api/v2/Packages(Id='Live2d-Cubism',Version='5.2.3')
+[NuGet]   OK https://community.chocolatey.org/api/v2/Packages(Id='Live2d-Cubism',Version='5.2.3') 258ms
+[NuGet] Resolving dependency information took 0 ms
+Resolving resource DownloadResource for source http://chocolatey.org/api/v2/
+Attempting to delete file "".
+Downloading package from source 'http://chocolatey.org/api/v2/'
+Package download location 'https://community.chocolatey.org/api/v2/package/Live2d-Cubism/5.2.3'
+[NuGet]   GET https://community.chocolatey.org/api/v2/package/Live2d-Cubism/5.2.3
+[NuGet]   OK https://community.chocolatey.org/api/v2/package/Live2d-Cubism/5.2.3 214ms
+[NuGet] Acquiring lock for the installation of Live2d-Cubism 5.2.3
+[NuGet] Acquired lock for the installation of Live2d-Cubism 5.2.3
+Progress: Downloading Live2d-Cubism 5.2.3... 100%
+[NuGet] Installed Live2d-Cubism 5.2.3 from http://chocolatey.org/api/v2/ with content hash eWNcxmcyr/qGX4xkVVt391hi56PBQQQ0P6qJ173V+pEZd64R4JPDmMvI91/crGLnC+twaWt0XxSoBOFVFS/syQ==.
+Skipping package hash validation as feature 'usePackageHashValidation' is not enabled.
+[NuGet] Adding package 'Live2d-Cubism.5.2.3' to folder 'C:\ProgramData\chocolatey\lib'
+[NuGet] Added package 'Live2d-Cubism.5.2.3' to folder 'C:\ProgramData\chocolatey\lib'
+Attempting to delete file "C:\Users\muddy\AppData\Local\Temp\chocolatey\ChocolateyScratch\Live2d-Cubism/5.2.3\Live2d-Cubism.5.2.3.nupkg".
+Attempting to delete file "C:\Users\muddy\AppData\Local\Temp\chocolatey\ChocolateyScratch\Live2d-Cubism/5.2.3\.nupkg.metadata".
+Attempting to delete file "C:\Users\muddy\AppData\Local\Temp\chocolatey\ChocolateyScratch\Live2d-Cubism/5.2.3\Live2d-Cubism.5.2.3.nupkg.sha512".
+
+live2d-cubism v5.2.3 (forced) [Approved] - Likely broken for FOSS users (due to download location changes)
+live2d-cubism package files install completed. Performing other installation steps.
+Setting installer args for Live2d-Cubism
+Setting package parameters for Live2d-Cubism
+Contents of 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\tools\chocolateyinstall.ps1':
+$ErrorActionPreference = 'Stop'
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url        = 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe'
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  unzipLocation = $toolsDir
+  fileType      = 'EXE'
+  url           = $url
+
+  softwareName  = 'live2d*'
+
+  checksum      = 'B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E'
+  checksumType  = 'sha256'
+
+  silentArgs    = "/S"
+  validExitCodes= @(0, 3010, 1641)
+}
+
+Install-ChocolateyPackage @packageArgs
+Calling built-in PowerShell host with ['[System.Threading.Thread]::CurrentThread.CurrentCulture = '';[System.Threading.Thread]::CurrentThread.CurrentUICulture = '';[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::SystemDefault; & import-module -name 'C:\ProgramData\chocolatey\helpers\chocolateyInstaller.psm1'; & 'C:\ProgramData\chocolatey\helpers\chocolateyScriptRunner.ps1' -packageScript 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\tools\chocolateyinstall.ps1' -installArguments '' -packageParameters '' -preRunHookScripts $null -postRunHookScripts $null']
+Redirecting System.Management.Automation.resources, Version=3.0.0.0, Culture=en-US, PublicKeyToken=31bf3856ad364e35, requested by ''
+Host version is 5.1.26100.1, PowerShell Version is '5.1.26100.1591' and CLR Version is '4.0.30319.42000'.
+VERBOSE: Loading module from path 'C:\ProgramData\chocolatey\helpers\Chocolatey.PowerShell.dll'.
+Returning loaded assembly type for 'Chocolatey.PowerShell'
+VERBOSE: Importing cmdlet 'Get-EnvironmentVariable'.
+VERBOSE: Importing cmdlet 'Get-EnvironmentVariableNames'.
+VERBOSE: Importing cmdlet 'Install-ChocolateyPath'.
+VERBOSE: Importing cmdlet 'Set-EnvironmentVariable'.
+VERBOSE: Importing cmdlet 'Test-ProcessAdminRights'.
+VERBOSE: Importing cmdlet 'Uninstall-ChocolateyPath'.
+VERBOSE: Importing cmdlet 'Update-SessionEnvironment'.
+Cmdlets exported from Chocolatey.PowerShell.dll
+Get-EnvironmentVariable
+Get-EnvironmentVariableNames
+Install-ChocolateyPath
+Set-EnvironmentVariable
+Test-ProcessAdminRights
+Uninstall-ChocolateyPath
+Update-SessionEnvironment
+VERBOSE: Exporting function 'Format-FileSize'.
+VERBOSE: Exporting function 'Get-ChecksumValid'.
+VERBOSE: Exporting function 'Get-ChocolateyConfigValue'.
+VERBOSE: Exporting function 'Get-ChocolateyPath'.
+VERBOSE: Exporting function 'Get-ChocolateyUnzip'.
+VERBOSE: Exporting function 'Get-ChocolateyWebFile'.
+VERBOSE: Exporting function 'Get-FtpFile'.
+VERBOSE: Exporting function 'Get-OSArchitectureWidth'.
+VERBOSE: Exporting function 'Get-PackageParameters'.
+VERBOSE: Exporting function 'Get-PackageParametersBuiltIn'.
+VERBOSE: Exporting function 'Get-ToolsLocation'.
+VERBOSE: Exporting function 'Get-UACEnabled'.
+VERBOSE: Exporting function 'Get-UninstallRegistryKey'.
+VERBOSE: Exporting function 'Get-VirusCheckValid'.
+VERBOSE: Exporting function 'Get-WebFile'.
+VERBOSE: Exporting function 'Get-WebFileName'.
+VERBOSE: Exporting function 'Get-WebHeaders'.
+VERBOSE: Exporting function 'Install-BinFile'.
+VERBOSE: Exporting function 'Install-ChocolateyEnvironmentVariable'.
+VERBOSE: Exporting function 'Install-ChocolateyExplorerMenuItem'.
+VERBOSE: Exporting function 'Install-ChocolateyFileAssociation'.
+VERBOSE: Exporting function 'Install-ChocolateyInstallPackage'.
+VERBOSE: Exporting function 'Install-ChocolateyPackage'.
+VERBOSE: Exporting function 'Install-ChocolateyPinnedTaskBarItem'.
+VERBOSE: Exporting function 'Install-ChocolateyPowershellCommand'.
+VERBOSE: Exporting function 'Install-ChocolateyShortcut'.
+VERBOSE: Exporting function 'Install-ChocolateyVsixPackage'.
+VERBOSE: Exporting function 'Install-ChocolateyZipPackage'.
+VERBOSE: Exporting function 'Install-Vsix'.
+VERBOSE: Exporting function 'Set-PowerShellExitCode'.
+VERBOSE: Exporting function 'Start-ChocolateyProcessAsAdmin'.
+VERBOSE: Exporting function 'Uninstall-BinFile'.
+VERBOSE: Exporting function 'Uninstall-ChocolateyEnvironmentVariable'.
+VERBOSE: Exporting function 'Uninstall-ChocolateyPackage'.
+VERBOSE: Exporting function 'Uninstall-ChocolateyZipPackage'.
+VERBOSE: Exporting function 'Write-FunctionCallLogMessage'.
+VERBOSE: Exporting cmdlet 'Get-EnvironmentVariable'.
+VERBOSE: Exporting cmdlet 'Get-EnvironmentVariableNames'.
+VERBOSE: Exporting cmdlet 'Install-ChocolateyPath'.
+VERBOSE: Exporting cmdlet 'Set-EnvironmentVariable'.
+VERBOSE: Exporting cmdlet 'Test-ProcessAdminRights'.
+VERBOSE: Exporting cmdlet 'Uninstall-ChocolateyPath'.
+VERBOSE: Exporting cmdlet 'Update-SessionEnvironment'.
+VERBOSE: Exporting alias 'Get-ProcessorBits'.
+VERBOSE: Exporting alias 'Get-OSBitness'.
+VERBOSE: Exporting alias 'Get-InstallRegistryKey'.
+VERBOSE: Exporting alias 'Generate-BinFile'.
+VERBOSE: Exporting alias 'Add-BinFile'.
+VERBOSE: Exporting alias 'Start-ChocolateyProcess'.
+VERBOSE: Exporting alias 'Invoke-ChocolateyProcess'.
+VERBOSE: Exporting alias 'Remove-BinFile'.
+VERBOSE: Exporting alias 'refreshenv'.
+Loading community extensions
+Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility\chocolatey-compatibility.psm1'
+VERBOSE: Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility\chocolatey-compatibility.psm1'.
+Function 'Get-PackageParameters' exists, ignoring export.
+Function 'Get-UninstallRegistryKey' exists, ignoring export.
+Exporting function 'Install-ChocolateyDesktopLink' for backwards compatibility
+VERBOSE: Exporting function 'Install-ChocolateyDesktopLink'.
+Exporting function 'Write-ChocolateyFailure' for backwards compatibility
+VERBOSE: Exporting function 'Write-ChocolateyFailure'.
+Exporting function 'Write-ChocolateySuccess' for backwards compatibility
+VERBOSE: Exporting function 'Write-ChocolateySuccess'.
+Exporting function 'Write-FileUpdateLog' for backwards compatibility
+VERBOSE: Exporting function 'Write-FileUpdateLog'.
+VERBOSE: Importing function 'Install-ChocolateyDesktopLink'.
+VERBOSE: Importing function 'Write-ChocolateyFailure'.
+VERBOSE: Importing function 'Write-ChocolateySuccess'.
+VERBOSE: Importing function 'Write-FileUpdateLog'.
+Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-core\chocolatey-core.psm1'
+VERBOSE: Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-core\chocolatey-core.psm1'.
+VERBOSE: Exporting function 'Get-AppInstallLocation'.
+VERBOSE: Exporting function 'Get-AvailableDriveLetter'.
+VERBOSE: Exporting function 'Get-EffectiveProxy'.
+VERBOSE: Exporting function 'Get-PackageCacheLocation'.
+VERBOSE: Exporting function 'Get-WebContent'.
+VERBOSE: Exporting function 'Register-Application'.
+VERBOSE: Exporting function 'Remove-Process'.
+VERBOSE: Importing function 'Get-AppInstallLocation'.
+VERBOSE: Importing function 'Get-AvailableDriveLetter'.
+VERBOSE: Importing function 'Get-EffectiveProxy'.
+VERBOSE: Importing function 'Get-PackageCacheLocation'.
+VERBOSE: Importing function 'Get-WebContent'.
+VERBOSE: Importing function 'Register-Application'.
+VERBOSE: Importing function 'Remove-Process'.
+Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-dotnetfx\chocolatey-dotnetfx.psm1'
+VERBOSE: Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-dotnetfx\chocolatey-dotnetfx.psm1'.
+VERBOSE: Exporting function 'Install-DotNetFramework'.
+VERBOSE: Exporting function 'Install-DotNetDevPack'.
+VERBOSE: Importing function 'Install-DotNetDevPack'.
+VERBOSE: Importing function 'Install-DotNetFramework'.
+Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-misc-helpers\chocolatey-misc-helpers.psm1'
+VERBOSE: Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-misc-helpers\chocolatey-misc-helpers.psm1'.
+VERBOSE: Exporting function 'Enable-AutoPin'.
+VERBOSE: Exporting function 'Show-Patreon'.
+VERBOSE: Exporting function 'Show-PayPal'.
+VERBOSE: Exporting function 'Show-ToastMessage'.
+VERBOSE: Exporting function 'Start-CheckandStop'.
+VERBOSE: Exporting function 'Start-CheckandThrow'.
+VERBOSE: Exporting function 'Start-WaitandStop'.
+VERBOSE: Exporting function 'Start-WaitandStopActual'.
+VERBOSE: Exporting function 'Test-Dependency'.
+VERBOSE: Exporting function 'Test-URL'.
+VERBOSE: Importing function 'Enable-AutoPin'.
+VERBOSE: Importing function 'Show-Patreon'.
+VERBOSE: Importing function 'Show-PayPal'.
+VERBOSE: Importing function 'Show-ToastMessage'.
+VERBOSE: Importing function 'Start-CheckandStop'.
+VERBOSE: Importing function 'Start-CheckandThrow'.
+VERBOSE: Importing function 'Start-WaitandStop'.
+VERBOSE: Importing function 'Start-WaitandStopActual'.
+VERBOSE: Importing function 'Test-Dependency'.
+VERBOSE: Importing function 'Test-URL'.
+Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate\chocolatey-windowsupdate.psm1'
+VERBOSE: Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate\chocolatey-windowsupdate.psm1'.
+VERBOSE: Exporting function 'Install-WindowsUpdate'.
+VERBOSE: Exporting function 'Test-WindowsUpdate'.
+VERBOSE: Importing function 'Install-WindowsUpdate'.
+VERBOSE: Importing function 'Test-WindowsUpdate'.
+VERBOSE: Exporting function 'Format-FileSize'.
+VERBOSE: Exporting function 'Get-ChecksumValid'.
+VERBOSE: Exporting function 'Get-ChocolateyConfigValue'.
+VERBOSE: Exporting function 'Get-ChocolateyPath'.
+VERBOSE: Exporting function 'Get-ChocolateyUnzip'.
+VERBOSE: Exporting function 'Get-ChocolateyWebFile'.
+VERBOSE: Exporting function 'Get-FtpFile'.
+VERBOSE: Exporting function 'Get-OSArchitectureWidth'.
+VERBOSE: Exporting function 'Get-PackageParameters'.
+VERBOSE: Exporting function 'Get-PackageParametersBuiltIn'.
+VERBOSE: Exporting function 'Get-ToolsLocation'.
+VERBOSE: Exporting function 'Get-UACEnabled'.
+VERBOSE: Exporting function 'Get-UninstallRegistryKey'.
+VERBOSE: Exporting function 'Get-VirusCheckValid'.
+VERBOSE: Exporting function 'Get-WebFile'.
+VERBOSE: Exporting function 'Get-WebFileName'.
+VERBOSE: Exporting function 'Get-WebHeaders'.
+VERBOSE: Exporting function 'Install-BinFile'.
+VERBOSE: Exporting function 'Install-ChocolateyEnvironmentVariable'.
+VERBOSE: Exporting function 'Install-ChocolateyExplorerMenuItem'.
+VERBOSE: Exporting function 'Install-ChocolateyFileAssociation'.
+VERBOSE: Exporting function 'Install-ChocolateyInstallPackage'.
+VERBOSE: Exporting function 'Install-ChocolateyPackage'.
+VERBOSE: Exporting function 'Install-ChocolateyPinnedTaskBarItem'.
+VERBOSE: Exporting function 'Install-ChocolateyPowershellCommand'.
+VERBOSE: Exporting function 'Install-ChocolateyShortcut'.
+VERBOSE: Exporting function 'Install-ChocolateyVsixPackage'.
+VERBOSE: Exporting function 'Install-ChocolateyZipPackage'.
+VERBOSE: Exporting function 'Install-Vsix'.
+VERBOSE: Exporting function 'Set-PowerShellExitCode'.
+VERBOSE: Exporting function 'Start-ChocolateyProcessAsAdmin'.
+VERBOSE: Exporting function 'Uninstall-BinFile'.
+VERBOSE: Exporting function 'Uninstall-ChocolateyEnvironmentVariable'.
+VERBOSE: Exporting function 'Uninstall-ChocolateyPackage'.
+VERBOSE: Exporting function 'Uninstall-ChocolateyZipPackage'.
+VERBOSE: Exporting function 'Write-FunctionCallLogMessage'.
+VERBOSE: Exporting function 'Install-ChocolateyDesktopLink'.
+VERBOSE: Exporting function 'Write-ChocolateyFailure'.
+VERBOSE: Exporting function 'Write-ChocolateySuccess'.
+VERBOSE: Exporting function 'Write-FileUpdateLog'.
+VERBOSE: Exporting function 'Get-AppInstallLocation'.
+VERBOSE: Exporting function 'Get-AvailableDriveLetter'.
+VERBOSE: Exporting function 'Get-EffectiveProxy'.
+VERBOSE: Exporting function 'Get-PackageCacheLocation'.
+VERBOSE: Exporting function 'Get-WebContent'.
+VERBOSE: Exporting function 'Register-Application'.
+VERBOSE: Exporting function 'Remove-Process'.
+VERBOSE: Exporting function 'Install-DotNetDevPack'.
+VERBOSE: Exporting function 'Install-DotNetFramework'.
+VERBOSE: Exporting function 'Enable-AutoPin'.
+VERBOSE: Exporting function 'Show-Patreon'.
+VERBOSE: Exporting function 'Show-PayPal'.
+VERBOSE: Exporting function 'Show-ToastMessage'.
+VERBOSE: Exporting function 'Start-CheckandStop'.
+VERBOSE: Exporting function 'Start-CheckandThrow'.
+VERBOSE: Exporting function 'Start-WaitandStop'.
+VERBOSE: Exporting function 'Start-WaitandStopActual'.
+VERBOSE: Exporting function 'Test-Dependency'.
+VERBOSE: Exporting function 'Test-URL'.
+VERBOSE: Exporting function 'Install-WindowsUpdate'.
+VERBOSE: Exporting function 'Test-WindowsUpdate'.
+VERBOSE: Exporting cmdlet 'Get-EnvironmentVariable'.
+VERBOSE: Exporting cmdlet 'Get-EnvironmentVariableNames'.
+VERBOSE: Exporting cmdlet 'Install-ChocolateyPath'.
+VERBOSE: Exporting cmdlet 'Set-EnvironmentVariable'.
+VERBOSE: Exporting cmdlet 'Test-ProcessAdminRights'.
+VERBOSE: Exporting cmdlet 'Uninstall-ChocolateyPath'.
+VERBOSE: Exporting cmdlet 'Update-SessionEnvironment'.
+VERBOSE: Exporting cmdlet 'Get-EnvironmentVariable'.
+VERBOSE: Exporting cmdlet 'Get-EnvironmentVariableNames'.
+VERBOSE: Exporting cmdlet 'Install-ChocolateyPath'.
+VERBOSE: Exporting cmdlet 'Set-EnvironmentVariable'.
+VERBOSE: Exporting cmdlet 'Test-ProcessAdminRights'.
+VERBOSE: Exporting cmdlet 'Uninstall-ChocolateyPath'.
+VERBOSE: Exporting cmdlet 'Update-SessionEnvironment'.
+VERBOSE: Exporting alias 'Get-ProcessorBits'.
+VERBOSE: Exporting alias 'Get-OSBitness'.
+VERBOSE: Exporting alias 'Get-InstallRegistryKey'.
+VERBOSE: Exporting alias 'Generate-BinFile'.
+VERBOSE: Exporting alias 'Add-BinFile'.
+VERBOSE: Exporting alias 'Start-ChocolateyProcess'.
+VERBOSE: Exporting alias 'Invoke-ChocolateyProcess'.
+VERBOSE: Exporting alias 'Remove-BinFile'.
+VERBOSE: Exporting alias 'refreshenv'.
+VERBOSE: Importing cmdlet 'Get-EnvironmentVariable'.
+VERBOSE: Importing cmdlet 'Get-EnvironmentVariableNames'.
+VERBOSE: Importing cmdlet 'Install-ChocolateyPath'.
+VERBOSE: Importing cmdlet 'Set-EnvironmentVariable'.
+VERBOSE: Importing cmdlet 'Test-ProcessAdminRights'.
+VERBOSE: Importing cmdlet 'Uninstall-ChocolateyPath'.
+VERBOSE: Importing cmdlet 'Update-SessionEnvironment'.
+VERBOSE: Importing function 'Enable-AutoPin'.
+VERBOSE: Importing function 'Format-FileSize'.
+VERBOSE: Importing function 'Get-AppInstallLocation'.
+VERBOSE: Importing function 'Get-AvailableDriveLetter'.
+VERBOSE: Importing function 'Get-ChecksumValid'.
+VERBOSE: Importing function 'Get-ChocolateyConfigValue'.
+VERBOSE: Importing function 'Get-ChocolateyPath'.
+VERBOSE: Importing function 'Get-ChocolateyUnzip'.
+VERBOSE: Importing function 'Get-ChocolateyWebFile'.
+VERBOSE: Importing function 'Get-EffectiveProxy'.
+VERBOSE: Importing function 'Get-FtpFile'.
+VERBOSE: Importing function 'Get-OSArchitectureWidth'.
+VERBOSE: Importing function 'Get-PackageCacheLocation'.
+VERBOSE: Importing function 'Get-PackageParameters'.
+VERBOSE: Importing function 'Get-PackageParametersBuiltIn'.
+VERBOSE: Importing function 'Get-ToolsLocation'.
+VERBOSE: Importing function 'Get-UACEnabled'.
+VERBOSE: Importing function 'Get-UninstallRegistryKey'.
+VERBOSE: Importing function 'Get-VirusCheckValid'.
+VERBOSE: Importing function 'Get-WebContent'.
+VERBOSE: Importing function 'Get-WebFile'.
+VERBOSE: Importing function 'Get-WebFileName'.
+VERBOSE: Importing function 'Get-WebHeaders'.
+VERBOSE: Importing function 'Install-BinFile'.
+VERBOSE: Importing function 'Install-ChocolateyDesktopLink'.
+VERBOSE: Importing function 'Install-ChocolateyEnvironmentVariable'.
+VERBOSE: Importing function 'Install-ChocolateyExplorerMenuItem'.
+VERBOSE: Importing function 'Install-ChocolateyFileAssociation'.
+VERBOSE: Importing function 'Install-ChocolateyInstallPackage'.
+VERBOSE: Importing function 'Install-ChocolateyPackage'.
+VERBOSE: Importing function 'Install-ChocolateyPinnedTaskBarItem'.
+VERBOSE: Importing function 'Install-ChocolateyPowershellCommand'.
+VERBOSE: Importing function 'Install-ChocolateyShortcut'.
+VERBOSE: Importing function 'Install-ChocolateyVsixPackage'.
+VERBOSE: Importing function 'Install-ChocolateyZipPackage'.
+VERBOSE: Importing function 'Install-DotNetDevPack'.
+VERBOSE: Importing function 'Install-DotNetFramework'.
+VERBOSE: Importing function 'Install-Vsix'.
+VERBOSE: Importing function 'Install-WindowsUpdate'.
+VERBOSE: Importing function 'Register-Application'.
+VERBOSE: Importing function 'Remove-Process'.
+VERBOSE: Importing function 'Set-PowerShellExitCode'.
+VERBOSE: Importing function 'Show-Patreon'.
+VERBOSE: Importing function 'Show-PayPal'.
+VERBOSE: Importing function 'Show-ToastMessage'.
+VERBOSE: Importing function 'Start-CheckandStop'.
+VERBOSE: Importing function 'Start-CheckandThrow'.
+VERBOSE: Importing function 'Start-ChocolateyProcessAsAdmin'.
+VERBOSE: Importing function 'Start-WaitandStop'.
+VERBOSE: Importing function 'Start-WaitandStopActual'.
+VERBOSE: Importing function 'Test-Dependency'.
+VERBOSE: Importing function 'Test-URL'.
+VERBOSE: Importing function 'Test-WindowsUpdate'.
+VERBOSE: Importing function 'Uninstall-BinFile'.
+VERBOSE: Importing function 'Uninstall-ChocolateyEnvironmentVariable'.
+VERBOSE: Importing function 'Uninstall-ChocolateyPackage'.
+VERBOSE: Importing function 'Uninstall-ChocolateyZipPackage'.
+VERBOSE: Importing function 'Write-ChocolateyFailure'.
+VERBOSE: Importing function 'Write-ChocolateySuccess'.
+VERBOSE: Importing function 'Write-FileUpdateLog'.
+VERBOSE: Importing function 'Write-FunctionCallLogMessage'.
+VERBOSE: Importing alias 'Add-BinFile'.
+VERBOSE: Importing alias 'Generate-BinFile'.
+VERBOSE: Importing alias 'Get-InstallRegistryKey'.
+VERBOSE: Importing alias 'Get-OSBitness'.
+VERBOSE: Importing alias 'Get-ProcessorBits'.
+VERBOSE: Importing alias 'Invoke-ChocolateyProcess'.
+VERBOSE: Importing alias 'refreshenv'.
+VERBOSE: Importing alias 'Remove-BinFile'.
+VERBOSE: Importing alias 'Start-ChocolateyProcess'.
+---------------------------Script Execution---------------------------
+Running 'ChocolateyScriptRunner' for Live2d-Cubism v5.2.3 with packageScript 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\tools\chocolateyinstall.ps1', packageFolder:'C:\ProgramData\chocolatey\lib\Live2d-Cubism', installArguments: '', packageParameters: '', preRunHookScripts: '', postRunHookScripts: '',
+Running package script 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\tools\chocolateyinstall.ps1'
+Running Install-ChocolateyPackage -url 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe' -checksum 'B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E' -checksumType 'sha256' -packageName 'Live2d-Cubism' -fileType 'EXE' -validExitCodes '0 3010 1641' -silentArgs '/S'
+Running Get-ChocolateyWebFile -packageName 'Live2d-Cubism' -fileFullPath 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2d-CubismInstall.EXE' -url 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe' -url64bit '' -checksum 'B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E' -checksumType 'sha256' -checksum64 '' -checksumType64 '' -options 'System.Collections.Hashtable' -getOriginalFileName 'True'
+Running Get-OSArchitectureWidth -compare '64'
+CPU is 64 bit
+Running Get-WebFileName -url 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe' -defaultName 'Live2d-CubismInstall.EXE'
+Using response url to determine file name. 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe'
+File name determined from url is 'Live2D_Cubism_Setup_5.2.03.exe'
+Running Get-WebHeaders -url 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe' -ErrorAction 'Stop'
+Setting the UserAgent to 'chocolatey command line'
+Request Headers:
+  'Accept':'*/*'
+  'User-Agent':'chocolatey command line'
+Response Headers:
+  'Connection':'keep-alive'
+  'x-amz-server-side-encryption':'AES256'
+  'x-amz-version-id':'9mNZs1MRT2hX_nLNDnTVzCMXEIba.Vxd'
+  'X-Cache':'Miss from cloudfront'
+  'X-Amz-Cf-Pop':'ORD56-P15'
+  'X-Amz-Cf-Id':'6_Dgsz6GQa4nbxVOyGhP0yj7fwed31RJ8_GNdEqNFdjXwll6hJem7Q=='
+  'Accept-Ranges':'bytes'
+  'Content-Length':'244318544'
+  'Cache-Control':'no-cache, no-store'
+  'Content-Type':'binary/octet-stream'
+  'Date':'Mon, 10 Nov 2025 11:20:58 GMT'
+  'ETag':'"6eb10c783351e94aac03cbed098279cc"'
+  'Last-Modified':'Tue, 28 Oct 2025 02:14:14 GMT'
+  'Server':'AmazonS3'
+  'Via':'1.1 9c1af7d3a65188bbe2a887e923707784.cloudfront.net (CloudFront)'
+File appears to be downloaded already. Verifying with package checksum to determine if it needs to be redownloaded.
+Running Get-ChecksumValid -file 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe' -checksum 'B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E' -checksumType 'sha256' -originalUrl 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe' -ErrorAction 'Stop'
+checksum.exe found at 'C:\ProgramData\chocolatey\helpers\..\tools\checksum.exe'
+Executing command ['C:\ProgramData\chocolatey\helpers\..\tools\checksum.exe' -c="B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E" -t="sha256" -f="C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe"]
+Hashes match.
+Command ['C:\ProgramData\chocolatey\helpers\..\tools\checksum.exe' -c="B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E" -t="sha256" -f="C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe"] exited with '0'.
+Live2d-Cubism's requested file has already been downloaded. Using cached copy at
+ 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe'.
+No runtime virus checking built into FOSS Chocolatey. Check out Pro/Business - https://chocolatey.org/compare
+Verifying package provided checksum of 'B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E' for 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe'.
+Running Get-ChecksumValid -file 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe' -checksum 'B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E' -checksumType 'sha256' -originalUrl 'https://cubism.live2d.com/editor/bin/Live2D_Cubism_Setup_5.2.03.exe'
+checksum.exe found at 'C:\ProgramData\chocolatey\helpers\..\tools\checksum.exe'
+Executing command ['C:\ProgramData\chocolatey\helpers\..\tools\checksum.exe' -c="B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E" -t="sha256" -f="C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe"]
+Hashes match.
+Command ['C:\ProgramData\chocolatey\helpers\..\tools\checksum.exe' -c="B7A8ED1ACBB6A99A1C4C358EE7C9FC76B2FB71C1F1F06CAC08F6A449F12B6F9E" -t="sha256" -f="C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe"] exited with '0'.
+Running Install-ChocolateyInstallPackage -packageName 'Live2d-Cubism' -fileType 'EXE' -silentArgs '/S' -file 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe' -validExitCodes '0 3010 1641' -useOnlyPackageSilentArguments 'False'
+Running Get-OSArchitectureWidth -compare '32'
+Installing Live2d-Cubism...
+Running Start-ChocolateyProcessAsAdmin -validExitCodes '0 3010 1641' -workingDirectory 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3' -statements '/S' -exeToRun 'C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe'
+Running Test-ProcessAdminRights
+Test-ProcessAdminRights: returning True
+Finishing 'Test-ProcessAdminRights'
+Elevating permissions and running ["C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe" /S]. This may take a while, depending on the statements.
+Command ["C:\Users\muddy\AppData\Local\Temp\chocolatey\Live2d-Cubism\5.2.3\Live2D_Cubism_Setup_5.2.03.exe" /S] exited with '0'.
+Finishing 'Start-ChocolateyProcessAsAdmin'
+Live2d-Cubism has been installed.
+----------------------------------------------------------------------
+Built-in PowerShell host called with ['[System.Threading.Thread]::CurrentThread.CurrentCulture = '';[System.Threading.Thread]::CurrentThread.CurrentUICulture = '';[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::SystemDefault; & import-module -name 'C:\ProgramData\chocolatey\helpers\chocolateyInstaller.psm1'; & 'C:\ProgramData\chocolatey\helpers\chocolateyScriptRunner.ps1' -packageScript 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\tools\chocolateyinstall.ps1' -installArguments '' -packageParameters '' -preRunHookScripts $null -postRunHookScripts $null'] exited with '0'.
+Calling command ['"C:\Windows\System32\shutdown.exe" /a']
+Command ['"C:\Windows\System32\shutdown.exe" /a'] exited with '1116'
+  live2d-cubism may be able to be automatically uninstalled.
+Capturing package files in 'C:\ProgramData\chocolatey\lib\Live2d-Cubism'
+ Found 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\live2d-cubism.nupkg'
+  with checksum '40781DFF2562B17449571507BCFE241A'
+ Found 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\live2d-cubism.nuspec'
+  with checksum '9F341FE3440ECCE5B4721AD9F1BB2C03'
+ Found 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\tools\chocolateyinstall.ps1'
+  with checksum '3FE71F6940D72FABD46F3A4EA9501B93'
+ Found 'C:\ProgramData\chocolatey\lib\Live2d-Cubism\tools\chocolateyuninstall.ps1'
+  with checksum 'BD5D74E10E85DB13F811439B8D49C03B'
+Attempting to delete file "C:\ProgramData\chocolatey\.chocolatey\live2d-cubism.5.2.3\.arguments".
+Attempting to delete file "C:\ProgramData\chocolatey\.chocolatey\live2d-cubism.5.2.3\.extra".
+Attempting to delete file "C:\ProgramData\chocolatey\.chocolatey\live2d-cubism.5.2.3\.version".
+Attempting to delete file "C:\ProgramData\chocolatey\.chocolatey\live2d-cubism.5.2.3\.sxs".
+Attempting to delete file "C:\ProgramData\chocolatey\.chocolatey\live2d-cubism.5.2.3\.pin".
+Attempting to delete file "C:\ProgramData\chocolatey\.chocolatey\live2d-cubism.5.2.3\.deploymentLocation".
+Sending message 'HandlePackageResultCompletedMessage' out if there are subscribers...
+Attempting to delete file "C:\ProgramData\chocolatey\lib\Live2d-Cubism\.chocolateyPending".
+ The install of live2d-cubism was successful.
+  Software installed as 'EXE', install location is likely default.
+
+Chocolatey installed 1/1 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Enjoy using Chocolatey? Explore more amazing features to take your
+experience to the next level at
+ https://chocolatey.org/compare
+Sending message 'PostRunMessage' out if there are subscribers...
+Exiting with 0
+PS C:\Users\muddy\Desktop\chocolatey-test-environment>
