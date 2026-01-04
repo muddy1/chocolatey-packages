@@ -4,9 +4,9 @@
   <metadata>
     <id>jdownloader</id>
     <version>50639</version>
-	<iconUrl></iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/JDownloader.png</iconUrl>
 	<tags>jdownloader download manager java idm</tags>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/jdownloader</packageSourceUrl>
     <owners>muddy1</owners>
     <title>JDownloader</title>
     <authors>JDownloader Community</authors>
