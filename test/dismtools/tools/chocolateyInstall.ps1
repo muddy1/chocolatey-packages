@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/Nexus-Mods/Vortex/releases/download/v1.14.1/vortex-setup-1.14.1.exe'
+$url        = 'https://github.com/CodingWonders/DISMTools/releases/download/v0.7.2_stable/dt_setup.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -8,9 +8,9 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
 
-  softwareName  = 'vortex*'
+  softwareName  = 'dismtools*'
 
-  checksum      = '09BD2449591CFBB2F599815A68C8C6A32D09111D76FA409F0975267B9C5930FE'
+  checksum      = '3AB811B201889DB9A1B46735B6E81581FFE3027B5328815706ECF91D2A94FEA0'
   checksumType  = 'sha256'
 
   silentArgs    = "/S"
