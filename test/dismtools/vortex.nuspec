@@ -14,41 +14,64 @@
 
 Our approach with Vortex aims to take complex tasks such as sorting your load order or managing your mod files and automates as much of the process as possible with the goal of having you achieve a stable modded game with minimal effort. We want to help you spend less time modding and more time playing your games.
 
-## Features
+## About DISMTools
 
-- MULTI-GAME SUPPORT:
+About this project
+This project was created simply because of the lack of free, open-source, and updated graphical interfaces for DISM. Before this tool was started, these popular UIs were available:
 
-With mod support for over 30 different games and counting - from Dark Souls, Fallout and Skyrim, to the Witcher series and Stardew Valley - Vortex is the most versatile mod manager available.
+NTLite, which is the most popular offering. This software is free, but puts certain features (like downloading OS and program updates) behind a paywall, so it may not be for you if you are looking for a free, fully-featured program
+MSMG Toolkit, which is one popular alternative. This is free and open-source (given that it is a script), but it may not be easily accessible for download, and may not be intuitive given its command-line user interface (TUI)
+DISM GUI, the first popular, .NET powered GUI that lets you perform a couple of actions with your Windows images. While it is open-source (with its source code available on GitHub), it has not been updated since 2017
+DISM++, another fully-featured, CBS-powered GUI. However, it has not been updated since 2023 and it is not open-source (even though there is a GitHub repository, it is only meant for the website and language translations)
+There are also more GUIs for DISM, but they are way less known, so they are not mentioned here. Given this situation, this project was created to be a viable alternative to NTLite that was free, open-source, easily accessible, and constantly updated.
 
-- CLOSE INTEGRATION WITH NEXUS MODS:
+## Key features
 
-Vortex is designed to seamlessly interact with Nexus Mods allowing you to easily find, install, and play mods from our site, learn about new files and catch the latest news.
+Working with projects
+Inspired by Visual Studio, DISMTools is the first project-based GUI. Projects store the mounted image, unattended answer files you want to apply, and a scratch directory for temporary operations.
 
-- MODDING MADE EASY:
+DISMTools projects are also tiny when you create them, and contain a structure that is easy to navigate.
 
-The built-in auto-sorting system manages your load order and helps you to resolve mod conflicts with powerful, yet easy to use plugin management features.
+The program also supports setting and removing file associations for projects with the click of a button (only on portable installations), so you can load your projects instantly by double-clicking them. You can also copy your installed deployment tools to your projects, allowing you to use those anywhere you take them.
 
-- MOD PROFILES:
+Manage your active installation, or installations on any drive
+With the online and offline installation management modes, you can easily manage any installation of a modern Windows version.
 
-Easily set up, switch between, and manage independent mod profiles enabling you to use exactly the combination of mods that you want for a particular playthrough.
+Compatibility and performance go hand in hand
+Unlike other user interfaces for DISM that use either the DISM API or the DISM executable, DISMTools uses both, providing great performance to get the information you want from your images and installations quickly, and compatibility, allowing you to use any version of the DISM program, ranging from the Windows 7 version all the way up to the latest versions in Windows 10 and 11, so that your existing command-line workflows are not affected when you move to the graphical interface.
 
-- MODERN, EASY TO USE UI:
+An advanced front-end
+DISMTools isn't just a front-end for DISM, but an advanced one. As you perform tasks with your images and installations, you're presented with rich information and functionality. Here are some examples:
 
-Featuring a fully customisable interface, Vortex allows you to quickly and easily access tools and manage your games, plugins, downloads and save games.
+Rich information during AppX package addition. When adding an AppX package, you'll see rich information and, in most cases, the main Store logo asset. You can also add encrypted application packages to active installations, and configure stub package preferences, for full AppX package management:
 
-- EXTENSIONS AND PLUGINS:
+Download content from App Installer packages automatically. Have an App Installer package? No problem. Add it, and DISMTools will download the main package and use it automatically:
 
-Vortex is released under a GPL-3 License giving our community the ability to write extensions and frameworks which can then interact with Vortex, continually adding to its functionality.</description>
-    <summary>Vortex is a free and open source piece of software that allows you to download, install, update and manage your mod files through an easy to use interface. It integrates with the Nexus sites to provide you with a fast, efficient and much less hassled modding experience.</summary>
+Automatic detection of sources from Group Policy. If you want to enable a feature, repair the component store of a Windows image, or add a capability, with a source defined in the Group Policy; you can easily use it:
+
+Easily create configuration lists. With the DISM Configuration List Editor you can quickly create your configuration list to exclude certain items during operations like capturing an image:
+
+Quickly manage all your mounted images in one interface. The mounted image manager lets you perform basic image management tasks with your mounted images:
+
+You can also get and save image file information using the manager.
+
+Generate and print image information easily. With image information reports, you can save the information of one area or all areas of the Windows image you're servicing for future reference as a Markdown file. You can also see your Markdown report in HTML form thanks to Markdig:
+
+Generate unattended answer files with ease. Using the unattended answer file creation wizard, powered by the answer file generator from Christoph Schneegans, you can create your files by simply following the pages:
+
+Quickly test your Windows images. With the ISO creation wizard, you can test your Windows image quickly and easily. You can also use your unattended answer files to test them, or to speed up the installation process by removing tedious steps from the out-of-box experience:
+
+</description>
+    <summary>DISMTools is a front-end for DISM that lets you manage your Windows Imaging (WIM) files and a whole lot more.</summary>
     <releaseNotes>#### Program
-* [Changelog](https://github.com/Nexus-Mods/Vortex/releases)
+* [Changelog](github.com/CodingWonders/DISMTools/releases/)
 </releaseNotes>
     <copyright></copyright>
-    <tags>vortex nexus mod mods manager vortexmodmanager vortex-mod-manager modmanager mod-manager nexusmods modding</tags>
-    <projectSourceUrl>https://github.com/Nexus-Mods/Vortex</projectSourceUrl>
-    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/vortex</packageSourceUrl>
-    <docsUrl>https://wiki.nexusmods.com/index.php/Category:Vortex</docsUrl>
-    <mailingListUrl>https://forums.nexusmods.com/index.php?/forum/4301-vortex/</mailingListUrl>
-    <bugTrackerUrl>https://github.com/Nexus-Mods/Vortex/issues</bugTrackerUrl>
+    <tags>vortex microsoft dism tools windows dismgui</tags>
+    <projectSourceUrl>https://github.com/CodingWonders/DISMTools</projectSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/dismtools</packageSourceUrl>
+    <docsUrl>https://github.com/CodingWonders/dt_help</docsUrl>
+    <mailingListUrl>https://www.reddit.com/r/DISMTools/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/CodingWonders/DISMTools/issues</bugTrackerUrl>
   </metadata>
 </package>
