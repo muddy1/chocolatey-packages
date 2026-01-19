@@ -13,7 +13,7 @@ $packageArgs = @{
   checksum      = '3AB811B201889DB9A1B46735B6E81581FFE3027B5328815706ECF91D2A94FEA0'
   checksumType  = 'sha256'
 
-  silentArgs    = "/S"
+  silentArgs    = "/SP- /VERYSILENT"
   validExitCodes= @(0, 3010, 1641)
 }
 

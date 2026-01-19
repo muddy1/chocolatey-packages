@@ -39,25 +39,25 @@ Compatibility and performance go hand in hand
 Unlike other user interfaces for DISM that use either the DISM API or the DISM executable, DISMTools uses both, providing great performance to get the information you want from your images and installations quickly, and compatibility, allowing you to use any version of the DISM program, ranging from the Windows 7 version all the way up to the latest versions in Windows 10 and 11, so that your existing command-line workflows are not affected when you move to the graphical interface.
 
 An advanced front-end
-DISMTools isn't just a front-end for DISM, but an advanced one. As you perform tasks with your images and installations, you're presented with rich information and functionality. Here are some examples:
+DISMTools isn't just a front-end for DISM, but an advanced one. As you perform tasks with your images and installations, you're presented with rich information and functionality. Here are some examples
 
-Rich information during AppX package addition. When adding an AppX package, you'll see rich information and, in most cases, the main Store logo asset. You can also add encrypted application packages to active installations, and configure stub package preferences, for full AppX package management:
+Rich information during AppX package addition. When adding an AppX package, you'll see rich information and, in most cases, the main Store logo asset. You can also add encrypted application packages to active installations, and configure stub package preferences, for full AppX package management
 
-Download content from App Installer packages automatically. Have an App Installer package? No problem. Add it, and DISMTools will download the main package and use it automatically:
+Download content from App Installer packages automatically. Have an App Installer package? No problem. Add it, and DISMTools will download the main package and use it automatically
 
-Automatic detection of sources from Group Policy. If you want to enable a feature, repair the component store of a Windows image, or add a capability, with a source defined in the Group Policy; you can easily use it:
+Automatic detection of sources from Group Policy. If you want to enable a feature, repair the component store of a Windows image, or add a capability, with a source defined in the Group Policy; you can easily use it
 
-Easily create configuration lists. With the DISM Configuration List Editor you can quickly create your configuration list to exclude certain items during operations like capturing an image:
+Easily create configuration lists. With the DISM Configuration List Editor you can quickly create your configuration list to exclude certain items during operations like capturing an image
 
-Quickly manage all your mounted images in one interface. The mounted image manager lets you perform basic image management tasks with your mounted images:
+Quickly manage all your mounted images in one interface. The mounted image manager lets you perform basic image management tasks with your mounted images
 
 You can also get and save image file information using the manager.
 
-Generate and print image information easily. With image information reports, you can save the information of one area or all areas of the Windows image you're servicing for future reference as a Markdown file. You can also see your Markdown report in HTML form thanks to Markdig:
+Generate and print image information easily. With image information reports, you can save the information of one area or all areas of the Windows image you're servicing for future reference as a Markdown file. You can also see your Markdown report in HTML form thanks to Markdig
 
-Generate unattended answer files with ease. Using the unattended answer file creation wizard, powered by the answer file generator from Christoph Schneegans, you can create your files by simply following the pages:
+Generate unattended answer files with ease. Using the unattended answer file creation wizard, powered by the answer file generator from Christoph Schneegans, you can create your files by simply following the pages
 
-Quickly test your Windows images. With the ISO creation wizard, you can test your Windows image quickly and easily. You can also use your unattended answer files to test them, or to speed up the installation process by removing tedious steps from the out-of-box experience:
+Quickly test your Windows images. With the ISO creation wizard, you can test your Windows image quickly and easily. You can also use your unattended answer files to test them, or to speed up the installation process by removing tedious steps from the out-of-box experience
 
 </description>
     <summary>DISMTools is a front-end for DISM that lets you manage your Windows Imaging (WIM) files and a whole lot more.</summary>
