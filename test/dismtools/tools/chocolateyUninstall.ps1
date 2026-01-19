@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
-$packageName = 'vortex'
-$programUninstallEntryName = 'Vortex*'
+$packageName = 'dismtools'
+$programUninstallEntryName = 'dismtools*'
 
 $registry = Get-UninstallRegistryKey -SoftwareName $programUninstallEntryName
 $file = $registry.UninstallString -replace ('/allusers', '')
