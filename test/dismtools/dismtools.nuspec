@@ -10,9 +10,7 @@
     <licenseUrl>https://github.com/CodingWonders/DISMTools/blob/stable/LICENSE</licenseUrl>
     <projectUrl>https://github.com/CodingWonders/DISMTools</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/dismtools.png</iconUrl>
-    <description>Vortex is the new, modern mod manager from Nexus Mods. It is designed to make modding your game as simple as possible for new users, while still providing enough control for more experienced veterans of the modding scene. Lead by Tannin, the creator of Mod Organizer, Vortex takes the lessons learnt during the development of MO and Nexus Mod Manager to provide the most powerful and intuitive modding experience available.
-
-Our approach with Vortex aims to take complex tasks such as sorting your load order or managing your mod files and automates as much of the process as possible with the goal of having you achieve a stable modded game with minimal effort. We want to help you spend less time modding and more time playing your games.
+    <description>![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/dismtools.png)
 
 ## About DISMTools
 
