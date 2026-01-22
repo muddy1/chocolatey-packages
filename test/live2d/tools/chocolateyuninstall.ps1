@@ -3,7 +3,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'live2d*'
   fileType      = 'EXE'
-  silentArgs    = "/S"
+  silentArgs    = "/SP-"
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
 }
 
