@@ -51,7 +51,7 @@ You can also get and save image file information using the manager.
 * [Changelog](github.com/CodingWonders/DISMTools/releases/)
 </releaseNotes>
     <copyright></copyright>
-    <tags>vortex microsoft dism tools windows dismgui</tags>
+    <tags>microsoft dism tools windows dismgui sysadmin</tags>
     <projectSourceUrl>https://github.com/CodingWonders/DISMTools</projectSourceUrl>
     <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/dismtools</packageSourceUrl>
     <docsUrl>https://github.com/CodingWonders/dt_help</docsUrl>
