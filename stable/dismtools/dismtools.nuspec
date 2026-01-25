@@ -49,7 +49,7 @@ Easily create configuration lists. With the DISM Configuration List Editor you c
 
 Generate and print image information easily. With image information reports, you can save the information of one area or all areas of the Windows image you're servicing for future reference as a Markdown file. You can also see your Markdown report in HTML form thanks to Markdig
 
-![Screenshot]https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/info_report_viewer.png)
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/info_report_viewer.png)
 
 </description>
     <summary>DISMTools is a front-end for DISM that lets you manage your Windows Imaging (WIM) files and a whole lot more.</summary>
