@@ -10,18 +10,13 @@
     <licenseUrl>https://github.com/CodingWonders/DISMTools/blob/stable/LICENSE</licenseUrl>
     <projectUrl>https://github.com/CodingWonders/DISMTools</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/dismtools.png</iconUrl>
-    <description>![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/dismtools.png)
+    <description>
 
 ## About DISMTools
 
 About this project
 This project was created simply because of the lack of free, open-source, and updated graphical interfaces for DISM. Before this tool was started, these popular UIs were available:
 
-NTLite, which is the most popular offering. This software is free, but puts certain features (like downloading OS and program updates) behind a paywall, so it may not be for you if you are looking for a free, fully-featured program
-MSMG Toolkit, which is one popular alternative. This is free and open-source (given that it is a script), but it may not be easily accessible for download, and may not be intuitive given its command-line user interface (TUI)
-DISM GUI, the first popular, .NET powered GUI that lets you perform a couple of actions with your Windows images. While it is open-source (with its source code available on GitHub), it has not been updated since 2017
-DISM++, another fully-featured, CBS-powered GUI. However, it has not been updated since 2023 and it is not open-source (even though there is a GitHub repository, it is only meant for the website and language translations)
-There are also more GUIs for DISM, but they are way less known, so they are not mentioned here. Given this situation, this project was created to be a viable alternative to NTLite that was free, open-source, easily accessible, and constantly updated.
 
 ## Key features
 
@@ -30,20 +25,31 @@ Inspired by Visual Studio, DISMTools is the first project-based GUI. Projects st
 
 DISMTools projects are also tiny when you create them, and contain a structure that is easy to navigate.
 
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/project_sizes.png)
+
+
 An advanced front-end
 DISMTools isn't just a front-end for DISM, but an advanced one. As you perform tasks with your images and installations, you're presented with rich information and functionality. Here are some examples
 
 Rich information during AppX package addition. When adding an AppX package, you'll see rich information and, in most cases, the main Store logo asset. You can also add encrypted application packages to active installations, and configure stub package preferences, for full AppX package management
 
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/rich_appx_info.gif)
+
 Download content from App Installer packages automatically. Have an App Installer package? No problem. Add it, and DISMTools will download the main package and use it automatically
+
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/app_installer_downloader.png)
 
 Automatic detection of sources from Group Policy. If you want to enable a feature, repair the component store of a Windows image, or add a capability, with a source defined in the Group Policy; you can easily use it
 
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/group_policy_caps.gif)
+
 Easily create configuration lists. With the DISM Configuration List Editor you can quickly create your configuration list to exclude certain items during operations like capturing an image
 
-Quickly manage all your mounted images in one interface. The mounted image manager lets you perform basic image management tasks with your mounted images
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/config_list_editor.png)
 
-You can also get and save image file information using the manager.
+Generate and print image information easily. With image information reports, you can save the information of one area or all areas of the Windows image you're servicing for future reference as a Markdown file. You can also see your Markdown report in HTML form thanks to Markdig
+
+![Screenshot]https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/info_report_viewer.png)
 
 </description>
     <summary>DISMTools is a front-end for DISM that lets you manage your Windows Imaging (WIM) files and a whole lot more.</summary>
