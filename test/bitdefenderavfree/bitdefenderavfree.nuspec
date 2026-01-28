@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id></id>
+    <version></version>
+	<iconUrl></iconUrl>
+	<tags></tags>
+    <packageSourceUrl></packageSourceUrl>
+    <owners>muddy1</owners>
+    <title>bitdefender</title>
+    <authors>BitDefender</authors>
+	<projectUrl>https://www.bitdefender.com/en-us/consumer/free-antivirus</projectUrl>
+	<mailingListUrl>https://community.bitdefender.com/en/</mailingListUrl>
+	<docsUrl>https://community.bitdefender.com/en/</docsUrl>
+	<bugTrackerUrl>https://community.bitdefender.com/en/discussion/105915/bd-version-issues?utm_source=community-search&utm_medium=organic-search&utm_term=version</bugTrackerUrl>
+	<licenseUrl>https://www.bitdefender.com/business/explore/simplify-ransomware/effortless-security-unmatched-protection-technology-excellence?utm_source=paid_media?campaign=2026_Jan_WW_CORE_XGTM_DM_Premium_Content_GZ_Platform_New_Messaging&cid=per|b|google|core0-mix-pp-pmax_bp-cr-na--&s_kwcid=AL!6076!3!!!!x!!&utm_term=&utm_campaign=CORE0-MIX-PP-PMAX_BP-CR-NA---&utm_source=adwords&utm_medium=ppc&hsa_acc=4722781592&hsa_cam=23353608400&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23353612009&gclid=Cj0KCQiAhOfLBhCCARIsAJPiopPNdCFD9epoticWw8Zi8pliaG1R98ZgrCOf9lIKQmi3NWZ5M4bQu84aAh7hEALw_wcB</licenseUrl>
+	<releaseNotes>https://www.bitdefender.com/consumer/support/answer/2027/</releaseNotes>
+    <copyright>Copyright © 1997 - 2026 Bitdefender</copyright>
+    <summary>Free antivirus Software</summary>
+    <description>
+An antivirus that offers virus protection completely free? That’s right. Bitdefender Antivirus Free learns your PC's daily activity patterns to instantly detect and isolate suspicious changes in real-time, shielding you from known and emerging threats, including:
+
+## Ransomware
+Financial extortion attacks that freeze PCs are on the rise, attacking everyone from individuals to global enterprises.
+
+Infected Downloads
+Infected downloads are files that contain harmful viruses or malware, which can compromise your device’s security and steal personal information
+
+## Phishing
+Cybercriminals exploit AI tools to write shockingly personalized messages that can dupe just about anyone.
+
+## Zero-Day Exploits
+Every software update comes with flaws that need fixing. Until they’re detected, hackers use them as infection points.
+
+## Rootkits & Trojans
+Notoriously hard to detect, these attack your PC’s central nervous system and use its credentials to steal & impersonate you.
+
+## Malicious Websites
+Malware can be embedded into almost anything you click on, including “next-gen” financial assets like NFTs.
+	</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
