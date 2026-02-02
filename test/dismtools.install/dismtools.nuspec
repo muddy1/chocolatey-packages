@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>dismtools</id>
+    <version>0.7.3_260201-beta</version>
+    <title>DISMTools</title>
+    <authors>https://github.com/CodingWonders/DISMTools/graphs/contributors</authors>
+    <owners>muddy1</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/CodingWonders/DISMTools/blob/stable/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/CodingWonders/DISMTools</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/dismtools.png</iconUrl>
+    <description>
+	
+This is a pre-release version please go here for the full release:
+[![](http://transparent-favicon.info/favicon.ico)](#)[Release Client](https://community.chocolatey.org/packages/dismtools/0.7.2)
+
+## About DISMTools
+
+About this project
+This project was created simply because of the lack of free, open-source, and updated graphical interfaces for DISM. Before this tool was started, these popular UIs were available:
+
+
+## Key features
+
+Working with projects
+Inspired by Visual Studio, DISMTools is the first project-based GUI. Projects store the mounted image, unattended answer files you want to apply, and a scratch directory for temporary operations.
+
+DISMTools projects are also tiny when you create them, and contain a structure that is easy to navigate.
+
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/project_sizes.png)
+
+
+An advanced front-end
+DISMTools isn't just a front-end for DISM, but an advanced one. As you perform tasks with your images and installations, you're presented with rich information and functionality. Here are some examples
+
+Rich information during AppX package addition. When adding an AppX package, you'll see rich information and, in most cases, the main Store logo asset. You can also add encrypted application packages to active installations, and configure stub package preferences, for full AppX package management
+
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/rich_appx_info.gif)
+
+Download content from App Installer packages automatically. Have an App Installer package? No problem. Add it, and DISMTools will download the main package and use it automatically
+
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/app_installer_downloader.png)
+
+Automatic detection of sources from Group Policy. If you want to enable a feature, repair the component store of a Windows image, or add a capability, with a source defined in the Group Policy; you can easily use it
+
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/group_policy_caps.gif)
+
+Easily create configuration lists. With the DISM Configuration List Editor you can quickly create your configuration list to exclude certain items during operations like capturing an image
+
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/config_list_editor.png)
+
+Generate and print image information easily. With image information reports, you can save the information of one area or all areas of the Windows image you're servicing for future reference as a Markdown file. You can also see your Markdown report in HTML form thanks to Markdig
+
+![Screenshot](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/info_report_viewer.png)
+
+</description>
+    <summary>DISMTools is a front-end for DISM that lets you manage your Windows Imaging (WIM) files and a whole lot more.</summary>
+    <releaseNotes>#### Program
+* [Changelog](github.com/CodingWonders/DISMTools/releases/)
+</releaseNotes>
+    <copyright></copyright>
+    <tags>microsoft dism tools windows dismgui sysadmin</tags>
+    <projectSourceUrl>https://github.com/CodingWonders/DISMTools</projectSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/dismtools</packageSourceUrl>
+    <docsUrl>https://github.com/CodingWonders/dt_help</docsUrl>
+    <mailingListUrl>https://www.reddit.com/r/DISMTools/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/CodingWonders/DISMTools/issues</bugTrackerUrl>
+  </metadata>
+</package>
