@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dismtools</id>
-    <version>0.7.3_260201-beta</version>
+    <version>0.7.3-pre</version>
     <title>DISMTools</title>
     <authors>https://github.com/CodingWonders/DISMTools/graphs/contributors</authors>
     <owners>muddy1</owners>
