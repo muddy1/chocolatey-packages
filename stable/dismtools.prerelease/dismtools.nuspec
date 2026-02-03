@@ -59,7 +59,7 @@ Generate and print image information easily. With image information reports, you
     <copyright></copyright>
     <tags>microsoft dism tools windows dismgui sysadmin</tags>
     <projectSourceUrl>https://github.com/CodingWonders/DISMTools</projectSourceUrl>
-    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/dismtools</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/dismtools.prerelease</packageSourceUrl>
     <docsUrl>https://github.com/CodingWonders/dt_help</docsUrl>
     <mailingListUrl>https://www.reddit.com/r/DISMTools/</mailingListUrl>
     <bugTrackerUrl>https://github.com/CodingWonders/DISMTools/issues</bugTrackerUrl>
