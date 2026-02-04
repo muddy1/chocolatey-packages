@@ -51,7 +51,7 @@ Vortex is released under a GPL-3 License giving our community the ability to wri
     <copyright></copyright>
     <tags>vortex nexus mod mods manager vortexmodmanager vortex-mod-manager modmanager mod-manager nexusmods modding</tags>
     <projectSourceUrl>https://github.com/Nexus-Mods/Vortex</projectSourceUrl>
-    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/vortex</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/vortex.pre</packageSourceUrl>
     <docsUrl>https://wiki.nexusmods.com/index.php/Category:Vortex</docsUrl>
     <mailingListUrl>https://forums.nexusmods.com/index.php?/forum/4301-vortex/</mailingListUrl>
     <bugTrackerUrl>https://github.com/Nexus-Mods/Vortex/issues</bugTrackerUrl>
