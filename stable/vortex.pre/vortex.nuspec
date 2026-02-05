@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vortex</id>
-    <version>1.16.0-beta.5-pre</version>
+    <version>1.16.0.5-pre</version>
     <title>Vortex</title>
     <authors>https://github.com/Nexus-Mods/Vortex/graphs/contributors</authors>
     <owners>muddy1</owners>

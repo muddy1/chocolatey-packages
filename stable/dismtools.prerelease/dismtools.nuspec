@@ -11,6 +11,8 @@
     <projectUrl>https://github.com/CodingWonders/DISMTools</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/dismtools.png</iconUrl>
     <description>
+## Notice
+pre-releases have been introduced to this repository for those of you that want to try versions outside of the stable branch. Please use the `--pre` prefix if you would like to download the pre-release version.
 
 ## About DISMTools
 
