@@ -6,7 +6,7 @@
     <version>4.0.20260205</version>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/dism.gui.png</iconUrl>
 	<tags>dism gui microsoft</tags>
-    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/dismgui</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/deprecated/dismgui</packageSourceUrl>
     <owners>muddy1</owners>
     <title>[deprecated] dism gui</title>
     <authors>mikecel79</authors>
