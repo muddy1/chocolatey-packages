@@ -3,12 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dismgui</id>
-    <version>4.0</version>
+    <version>4.0.20260205</version>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/dism.gui.png</iconUrl>
 	<tags>dism gui microsoft</tags>
     <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/dismgui</packageSourceUrl>
     <owners>muddy1</owners>
-    <title>DISM Gui</title>
+    <title>[deprecated] dism gui</title>
     <authors>mikecel79</authors>
 	<projectUrl>https://github.com/mikecel79/DISMGUI</projectUrl>
 	<mailingListUrl>https://mikecel79.wordpress.com</mailingListUrl>
@@ -18,6 +18,11 @@
     <copyright>markcel79 2017</copyright>
     <summary>Graphical DISM tool</summary>
     <description>
+	
+	this package is deprecated. please consider using dismtools here:
+	https://community.chocolatey.org/packages/dismtools/0.7.2
+	pre releases will also be available on this page.
+	
 	![](https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/screenshots/DISM-GUI.png)
 	
 	DISM GUI is a graphical interface for the DISM command line utility written in the .NET. DISM GUI allows you to mount and dismount WIMs, manager drivers, features and packages. 
