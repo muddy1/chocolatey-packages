@@ -10,10 +10,11 @@
     <licenseUrl>https://github.com/Nexus-Mods/Vortex/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://www.nexusmods.com/site/mods/1/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/Vortex.png</iconUrl>
-    <description>Vortex is the new, modern mod manager from Nexus Mods. It is designed to make modding your game as simple as possible for new users, while still providing enough control for more experienced veterans of the modding scene. Lead by Tannin, the creator of Mod Organizer, Vortex takes the lessons learnt during the development of MO and Nexus Mod Manager to provide the most powerful and intuitive modding experience available.
-
+    <description>
 ## Notice
 pre-releases are introduced to this repository for those of you that want to try versions outside of the stable branch. Please use the `--pre` prefix if you would like to download the pre-release version of vortex.
+
+Vortex is the new, modern mod manager from Nexus Mods. It is designed to make modding your game as simple as possible for new users, while still providing enough control for more experienced veterans of the modding scene. Lead by Tannin, the creator of Mod Organizer, Vortex takes the lessons learnt during the development of MO and Nexus Mod Manager to provide the most powerful and intuitive modding experience available.
 
 Our approach with Vortex aims to take complex tasks such as sorting your load order or managing your mod files and automates as much of the process as possible with the goal of having you achieve a stable modded game with minimal effort. We want to help you spend less time modding and more time playing your games.
 
