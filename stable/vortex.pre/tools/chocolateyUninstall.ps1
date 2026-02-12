@@ -9,7 +9,7 @@ $file = $registry.UninstallString -replace ('/allusers', '')
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'exe'
-  silentArgs     = '/S DISABLE_UNINSTALL_SURVEY=1'
+  silentArgs     = '/S'
   validExitCodes = @(0)
   file           = $file
 }
