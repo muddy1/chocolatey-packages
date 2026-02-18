@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/Nexus-Mods/Vortex/releases/download/v1.16.2/vortex-setup-1.16.2.exe'
+$url        = 'https://github.com/Nexus-Mods/Vortex/releases/download/v1.16.3/vortex-setup-1.16.3.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'vortex*'
 
-  checksum      = '9EF89FC1C1FF06AD17C501B3F3E66C4381912A66E3647B159C9FDD52C1D96619'
+  checksum      = '423c60da29d245f66097c7339c6d6eb8f8ca1848b8e0762f434de3ec71051353'
   checksumType  = 'sha256'
 
   silentArgs    = "/S"
