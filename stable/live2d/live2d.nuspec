@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>live2d-cubism</id>
-    <version>5.3.00</version>
+    <version>5.3.01</version>
 	<copyright>© 2010 - 2025 Live2D Inc.</copyright>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/cubism-logo.png</iconUrl>
 	<tags>live2d animation art</tags>
