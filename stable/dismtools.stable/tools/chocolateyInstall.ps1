@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/CodingWonders/DISMTools/releases/download/v0.7.2_stable/dt_setup.exe
+$url        = 'https://github.com/CodingWonders/DISMTools/releases/download/v0.7.3_stable/dt_setup.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'dismtools*'
 
-  checksum      = '3AB811B201889DB9A1B46735B6E81581FFE3027B5328815706ECF91D2A94FEA0'
+  checksum      = 'a4aa743205a8a880134ed49593855736cc34cb6b1fa49e8d2c6cbb6e19865a2b'
   checksumType  = 'sha256'
 
   silentArgs    = "/SP- /VERYSILENT"
