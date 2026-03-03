@@ -19,7 +19,8 @@
 	<licenseUrl>https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_en.html</licenseUrl>
 	<summary>Software that directly animates your original drawings.</summary>
     <description>
-	beta is being added for those of you who wish to experiment with new features
+	## Notice
+pre-releases are introduced to this repository for those of you that want to try versions outside of the stable branch. Please use the `--pre` prefix if you would like to download the beta version of live2d.
 	Live2D is the industry standard tool for 2D real-time expression, chosen by professional creators around the world. It is widely used in mobile apps, console games, VTuber streaming, and animations.</description>
   </metadata>
   <files>
