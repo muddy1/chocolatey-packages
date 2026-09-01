@@ -3,7 +3,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'live2d*'
   fileType      = 'EXE'
-  silentArgs    = "/S"
+  # Changed from /S to Inno Setup silent flags
+  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
 }
 
@@ -15,9 +16,10 @@ if ($key.Count -eq 1) {
 
     if ($packageArgs['fileType'] -eq 'MSI') {
       $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
-
       $packageArgs['file'] = ''
     } else {
+      # For Inno Setup EXE, make sure it overrides any raw registry flags with your silentArgs
+      $packageArgs['silentArgs'] = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
     }
 
     Uninstall-ChocolateyPackage @packageArgs

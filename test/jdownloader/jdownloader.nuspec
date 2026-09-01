@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>jdownloader</id>
-    <version>50639</version>
+    <version>180482</version>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/JDownloader.png</iconUrl>
 	<tags>jdownloader download manager java idm</tags>
     <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/jdownloader</packageSourceUrl>

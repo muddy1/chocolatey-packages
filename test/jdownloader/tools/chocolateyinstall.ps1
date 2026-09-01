@@ -1,28 +1,21 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'JDownloader2Setup_windows-amd64_v21_0_7.exe'
+$installerPath = Join-Path $toolsDir 'Setup\JDownloader2Setup_windows-amd64_v1_8_0_482.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'EXE'
-  file         = $fileLocation
-
-  softwareName  = 'jdownloader*'
-
-  checksum      = '504B6AF59EA6C42582AFDCF48F3CB8165CD92DAACECAC9FB01FFF67054617E45'
+  file          = $installerPath
+  softwareName  = 'JDownloader*'
+  silentArgs    = '-q -overwrite -VexecuteLauncherAction$Boolean=false'
+  validExitCodes= @(0, 3010, 1641, 22)
+  checksum      = 'F4346F7DCEDD3E885F271FBB3182E9E7CEF3BBD02C6B034F7D1B959856D100E7'
   checksumType  = 'sha256'
-
-  silentArgs    = "-q"
-  validExitCodes= @(0, 3010, 1641)
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 
-# Remove the installers as there is no more need for it
-Remove-Item $toolsDir\*.exe -ea 0 -Force
-
-
+Remove-Item (Join-Path $toolsDir 'setup\*.exe') -ErrorAction SilentlyContinue -Force
 
 
 
