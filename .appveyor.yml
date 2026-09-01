@@ -21,7 +21,6 @@ environment:
   github_api_key:
     secure: M4Wg6wQFGyCkRpQddTBUPBreg442DNDJ7CP51vvBIqXSb1QlM0cWVRL8KUWOVlhz
 
-
   # Mail credentials - for error notifications
   mail_user:
     secure: ngn4sotZjK1Ud8AM8yNGJokTgIB2LqM98y3b40Qr/Qw=
@@ -77,6 +76,7 @@ install:
 - choco --version
 - ps: |
     choco install chocolatey-au --version $Env:au_version -y
+    choco install megacmd -y
 
 - ps: |
     "Build info"
