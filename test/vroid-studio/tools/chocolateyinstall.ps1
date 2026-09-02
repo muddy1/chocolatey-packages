@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.vroid.com/dist/CIOY6DScmN/VRoidStudio-v2.2.0-win.exe'
+$url        = 'https://download.vroid.com/dist/VHpx0Opa4q/VRoidStudio-v2.14.0-win.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'vroid-studio*'
 
-  checksum      = '21386FFBC82A406107CF569EBDE5F44E6DE8C667C51FF0F3D22F2D055C32DF05'
+  checksum      = 'D59AD962CEBCAA3375B7ADD4C457F653B4B82D1B554B3040CE1B092CAEA18F38'
   checksumType  = 'sha256'
 
   silentArgs    = "/SP- /VERYSILENT"
