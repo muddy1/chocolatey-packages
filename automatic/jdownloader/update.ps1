@@ -1,47 +1,32 @@
-import-module au
-
-$megaUrl = 'https://mega.nz/file/LNcXQJqS#6SaV0-JXG580T-BMSrp_xjepsEyDYjV8danX854mC9w'
-
 function global:au_GetLatest {
-    Write-Host "Downloading latest installer from Mega..."
-    mega-get $megaUrl .
-
-    $installer = Get-ChildItem -Filter "JDownloader2Setup*.exe" | Select-Object -First 1
-    if (!$installer) { throw "Failed to download JDownloader installer from Mega." }
-
-    # Extract version from filename or fallback
-    if ($installer.Name -match 'v(\d+)_(\d+)_(\d+)_(\d+)') {
-        $version = "$($Matches[1]).$($Matches[2]).$($Matches[3]).$($Matches[4])"
-    } else {
-        $version = '1.8.0.482'
+    # 1. Ping the JDownloader Core Update API to detect version changes
+    $UpdateUrl = 'https://jdownloader.org'
+    try {
+        $Response = Invoke-RestMethod -Uri $UpdateUrl -Method Get -UseBasicParsing -TimeoutSec 15
+        if ($Response -match 'rev=(\d+)') { 
+            $Revision = $Matches[1] 
+        } else { 
+            $Revision = "180482" 
+        }
+    } catch {
+        Write-Error "Could not communicate with JDownloader update registry."
+        return $null
     }
 
-    # Calculate the SHA256 of the fresh file[cite: 9]
-    $hash = (Get-FileHash $installer.FullName -Algorithm SHA256).Hash
+    # Generate the sequential package version based on the live revision
+    $Version = "$Revision.0.0"
+
+    # 2. Point AU to your stable Mega direct-download link as the source binary
+    # Whenever you update your custom installer binary on Mega, update this URL if the file ID changes.
+    $Url64 = "https://mega.nz/file/YOUR_MEGA_FILE_ID#YOUR_FILE_KEY"
 
     return @{
-        Version      = $version
-        URL          = $megaUrl
-        FileName     = $installer.Name
-        Path         = $installer.FullName
-        Checksum     = $hash
+        Version = $Version
+        URL64   = $Url64
     }
 }
 
 function global:au_SearchReplace {
-    @{
-        "tools\chocolateyinstall.ps1" = @{
-            # Targets: Join-Path $toolsDir 'Setup\JDownloader2Setup_windows-amd64_v1_8_0_482.exe'[cite: 9]
-            "(?i)(Join-Path\s+`$toolsDir\s+'Setup\\)(.*?)('.*)" = "`$1$($Latest.FileName)`$3"
-            
-            # Targets: checksum      = '...'[cite: 9]
-            "(?i)(^\s*checksum\s*=\s*')(.*?)('.*)" = "`$1$($Latest.Checksum)`$3"
-        }
-        "jdownloader.nuspec" = @{
-            # Targets: <version>...</version>[cite: 9]
-            "(<version>)(.*?)(</version>)" = "`$1$($Latest.Version)`$3"
-        }
-    }
+    StandardNuspec
+    StandardChocolateyInstall
 }
-
-update -ChecksumFor none
