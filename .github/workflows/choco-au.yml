@@ -1,0 +1,30 @@
+name: Chocolatey-AU Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  update:
+    runs-on: windows-latest # Chocolatey-AU requires a Windows environment
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Chocolatey-AU
+        uses: chocolatey-community/chocolatey-au-action@v2
+        with:
+          # Target all automatic package directories via wildcards
+          package-paths: |
+            automatic/*
+          push: true
+          api-key: ${{ secrets.CHOCO_API_KEY }}
+          test-install: true
+          commit-changes: true
+          commit-message: 'chore: Chocolatey-AU update [skip ci]'
