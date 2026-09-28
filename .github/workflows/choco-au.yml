@@ -1,30 +1,31 @@
-name: Chocolatey-AU Update
-
-on:
+name: Run Chocolatey AUon:
+  # Run on a schedule (e.g., every 6 hours)
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
-  workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
-
-defaults:
-  run:
-    shell: pwsh
-
-jobs:
-  update:
-    runs-on: windows-latest # Chocolatey-AU requires a Windows environment
+    - cron: '0 */6 * * *'
+  # Allow manual trigger from the GitHub Actions tab
+  workflow_dispatch:jobs:
+  update-packages:
+    runs-on: windows-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
-
-      - name: Run Chocolatey-AU
-        uses: chocolatey-community/chocolatey-au-action@2.0
         with:
-          # Target all automatic package directories via wildcards
-          package-paths: |
-            automatic/*
-          push: true
-          api-key: ${{ secrets.CHOCO_API_KEY }}
-          test-install: true
-          commit-changes: true
-          commit-message: 'chore: Chocolatey-AU update [skip ci]'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Initialize Git Config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Install Chocolatey AU Module
+        shell: pwsh
+        run: |
+          Install-Module -Name chocolatey-au -Force -Scope CurrentUser
+      - name: Run Package Updates
+        shell: pwsh
+        env:
+          # automatically push packages to chocolatey.org
+        CHOCOLATEY_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        run: |
+          # Call master update script or updateall logic
+          .\updateall.ps1
