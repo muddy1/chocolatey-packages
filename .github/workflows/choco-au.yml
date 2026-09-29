@@ -24,8 +24,8 @@ name: Run Chocolatey AUon:
       - name: Run Package Updates
         shell: pwsh
         env:
-          # automatically push packages to chocolatey.org
+        # automatically push packages to chocolatey.org
         CHOCOLATEY_API_KEY: ${{ secrets.CHOCO_API_KEY }}
         run: |
-          # Call master update script or updateall logic
+        # Call master update script or updateall logic
           .\updateall.ps1
