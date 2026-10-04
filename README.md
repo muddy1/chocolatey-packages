@@ -1,50 +1,35 @@
 # Chocolatey Packages
 
-~~~
-<!-- EDIT ME-->
+Automated and maintained Chocolatey packages repository for [muddy1](https://github.com/muddy1).
 
-[![](https://ci.appveyor.com/api/projects/status/github/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages)
-[Update status](https://gist.github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GIST_ID)
+[![Run Chocolatey AU](https://github.com/muddy1/chocolatey-packages/actions/workflows/choco-au.yml/badge.svg)](https://github.com/muddy1/chocolatey-packages/actions/workflows/choco-au.yml)
 
-<!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
-~~~
+## Folder Structure
 
-## Chocolatey Packages Template
+* **`automatic/`** - Packages automatically updated and published using [Chocolatey AU](https://github.com/chocolatey-community/chocolatey-au).
+* **`stable/`** - Stable, released package definitions maintained in the repository.
+* **`test/`** - Sandbox environment for developing and validating packages before promoting them to `automatic` or `stable`.
+* **`deprecated/`** - Packages that are obsolete or no longer maintained.
+* **`icons/`** - Centralized image and icon assets for package metadata.
+* **`screenshots/`** - Centralized screenshot assets.
+* **`setup/`** - Scripts and resources for Chocolatey AU setup and configuration.
 
-This contains Chocolatey packages, both manually and automatically maintained.
+## Requirements
 
-### Folder Structure
+* [Chocolatey CLI](https://chocolatey.org/) (`choco.exe`)
+* PowerShell 5.1+ or PowerShell 7+
+* [chocolatey-au module](https://github.com/chocolatey-community/chocolatey-au)
 
-* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using [chocolatey-au](https://github.com/chocolatey-community/chocolatey-au).
-* icons - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
-* manual - where packages that are not automatic are kept.
+## Updating Packages
 
-### Requirements
+To run updates locally with AU:
 
-* Chocolatey (choco.exe)
+```powershell
+# Update all automatic packages
+.\update_all.ps1
 
-#### AU
+# Update a specific package
+.\update_all.ps1 -Name jdownloader
+```
 
-* PowerShell v5+.
-* The [chocolatey-au module](https://github.com/chocolatey-community/chocolatey-au).
-
-### Getting started
-
-1. Click "Use this template" then "Create a new repository". Name it `chocolatey-packages`
-1. Clone the repository locally.
-1. Head into the `setup` folder and perform the steps in the README there.
-1. Edit this README. Update the badges at the top.
-
-### Adapting your current source repository to this source repository template
-
-You want to bring in all of your packages into the proper folders. We suggest using some sort of diffing tool to look at the differences between your current solution and this solution and then making adjustments to it. Pay special attention to the setup folder.
-
-1. Bring over the following files to your package source repository:
- * `automatic\README.md`
- * `icons\README.md`
- * `manual\README.md`
- * `setup\*.*`
- * `.appveyor.yml`
-1. Inspect the following file and add the differences:
- * `.gitignore`
 

@@ -1,9 +1,13 @@
-name: Run Chocolatey AUon:
+name: Run Chocolatey AU
+
+on:
   # Run on a schedule (e.g., every 6 hours)
   schedule:
     - cron: '0 */6 * * *'
   # Allow manual trigger from the GitHub Actions tab
-  workflow_dispatch:jobs:
+  workflow_dispatch:
+
+jobs:
   update-packages:
     runs-on: windows-latest
 
@@ -17,15 +21,19 @@ name: Run Chocolatey AUon:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Install Chocolatey AU Module
         shell: pwsh
         run: |
           Install-Module -Name chocolatey-au -Force -Scope CurrentUser
+
       - name: Run Package Updates
         shell: pwsh
         env:
-        # automatically push packages to chocolatey.org
-        CHOCOLATEY_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+          # Automatically push packages to chocolatey.org if API key is present
+          CHOCOLATEY_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+          api_key: ${{ secrets.CHOCO_API_KEY }}
         run: |
-        # Call master update script or updateall logic
-          .\updateall.ps1
+          # Call master update script
+          .\update_all.ps1
+
