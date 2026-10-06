@@ -4,9 +4,9 @@
   <metadata>
     <id>gamesavemanager</id>
     <version>3.1.571.0</version>
-	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/au-packages@master/icons/gamesave.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/gamesave.png</iconUrl>
 	<tags>steam game save manager gui</tags>
-    <packageSourceUrl>https://github.com/muddy1/au-packages/tree/master/stable/gamesavemanager</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/gamesavemanager</packageSourceUrl>
     <owners>muddy1</owners>
     <title>GameSave Manager</title>
     <authors>InsaneMatt</authors>

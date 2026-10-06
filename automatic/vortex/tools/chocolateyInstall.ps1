@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.vroid.com/dist/VHpx0Opa4q/VRoidStudio-v2.14.0-win.exe'
+$url        = 'https://github.com/Nexus-Mods/Vortex/releases/download/v2.7.2/vortex-setup-2.7.2.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -8,30 +8,13 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
 
-  softwareName  = 'vroid-studio*'
+  softwareName  = 'vortex*'
 
-  checksum      = 'D59AD962CEBCAA3375B7ADD4C457F653B4B82D1B554B3040CE1B092CAEA18F38'
+  checksum      = ''
   checksumType  = 'sha256'
 
-  silentArgs    = "/SP- /VERYSILENT"
+  silentArgs    = "/S"
   validExitCodes= @(0, 3010, 1641)
 }
 
 Install-ChocolateyPackage @packageArgs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

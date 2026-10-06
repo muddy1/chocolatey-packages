@@ -1,0 +1,36 @@
+name: Chocolatey Package Updater
+
+on:
+  schedule:
+    # Run weekly at 03:00 UTC on Sunday
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-packages:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git Bot
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run Package Updater
+        shell: pwsh
+        env:
+          api_key: ${{ secrets.CHOCO_API_KEY }}
+          CHOCOLATEY_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+          au_Push: 'true'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          .\Invoke-PackageCron.ps1 -Push -GitCommitPush

@@ -1,8 +1,8 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $shortcutName          = 'flakiesADB.lnk'
-$desktopicon           = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
-$starticon             = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
+$desktopicon           = (Join-Path ([Environment]::GetFolderPath('Desktop')) $shortcutName)
+$starticon             = (Join-Path ([Environment]::GetFolderPath('Programs')) $shortcutName)
 
 if (Test-Path $desktopicon) {
 	Remove-Item $desktopicon

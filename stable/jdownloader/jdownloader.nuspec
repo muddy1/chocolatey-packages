@@ -6,7 +6,7 @@
     <version>180504</version>
 	<iconUrl>https://cdn.jsdelivr.net/gh/muddy1/chocolatey-packages@master/icons/JDownloader.png</iconUrl>
 	<tags>jdownloader download manager java idm</tags>
-    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/test/jdownloader</packageSourceUrl>
+    <packageSourceUrl>https://github.com/muddy1/chocolatey-packages/tree/master/stable/jdownloader</packageSourceUrl>
     <owners>muddy1</owners>
     <title>JDownloader</title>
     <authors>JDownloader Community</authors>

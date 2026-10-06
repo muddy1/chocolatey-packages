@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $toolsDir 			   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $pp                    = Get-PackageParameters
 $shortcutName          = 'flakiesADB.lnk'
@@ -23,7 +23,7 @@ if ($pp['desktopicon']) {
 }
 
 if (!$pp['nostart']) {
-	$starticon = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
+	$starticon = (Join-Path ([Environment]::GetFolderPath('Programs')) $shortcutName)
 	Write-Host -ForegroundColor green 'Adding ' $starticon
 	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
 }

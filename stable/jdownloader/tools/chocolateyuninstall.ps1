@@ -1,21 +1,21 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 # Target the main installation directory directly
 $installDir = "$env:ProgramFiles\JDownloader"
 
-if (Test-Path $installDir) {
-    Remove-Item $installDir -Recurse -Force -ErrorAction SilentlyContinue
+if (-not [string]::IsNullOrWhiteSpace($installDir) -and (Test-Path -LiteralPath $installDir)) {
+    Remove-Item -LiteralPath $installDir -Recurse -Force -ErrorAction SilentlyContinue
 }
 
-# --- NEW: Remove desktop icons if they exist ---
+# --- Remove desktop icons if they exist ---
 $desktopPaths = @(
     "$env:PUBLIC\Desktop",
     "$env:USERPROFILE\Desktop"
 )
 
 foreach ($desktop in $desktopPaths) {
-    if (Test-Path $desktop) {
-        Get-ChildItem -Path $desktop -Filter "JDownloader*.lnk" -ErrorAction SilentlyContinue |
+    if (Test-Path -LiteralPath $desktop) {
+        Get-ChildItem -LiteralPath $desktop -Filter "JDownloader*.lnk" -ErrorAction SilentlyContinue |
             Remove-Item -Force -ErrorAction SilentlyContinue
     }
 }

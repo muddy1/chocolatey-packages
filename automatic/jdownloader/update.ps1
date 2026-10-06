@@ -1,32 +1,24 @@
+import-module au
+
 function global:au_GetLatest {
-    # 1. Ping the JDownloader Core Update API to detect version changes
-    $UpdateUrl = 'https://jdownloader.org'
     try {
-        $Response = Invoke-RestMethod -Uri $UpdateUrl -Method Get -UseBasicParsing -TimeoutSec 15
-        if ($Response -match 'rev=(\d+)') { 
-            $Revision = $Matches[1] 
-        } else { 
-            $Revision = "180482" 
-        }
+        $r = Invoke-RestMethod 'https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/a/AppWork/JDownloader' -Headers @{ 'User-Agent' = 'Chocolatey-AU' } -TimeoutSec 15
+        $versions = $r | Where-Object type -eq 'dir' | Select-Object -ExpandProperty name
+        $latest = $versions | Sort-Object { [version]$_ } -ErrorAction SilentlyContinue | Select-Object -Last 1
+        if (-not $latest) { $latest = $versions | Select-Object -Last 1 }
+        if (-not $latest) { $latest = '2.0.1' }
+        return @{ Version = $latest }
     } catch {
-        Write-Error "Could not communicate with JDownloader update registry."
-        return $null
-    }
-
-    # Generate the sequential package version based on the live revision
-    $Version = "$Revision.0.0"
-
-    # 2. Point AU to your stable Mega direct-download link as the source binary
-    # Whenever you update your custom installer binary on Mega, update this URL if the file ID changes.
-    $Url64 = "https://mega.nz/file/YOUR_MEGA_FILE_ID#YOUR_FILE_KEY"
-
-    return @{
-        Version = $Version
-        URL64   = $Url64
+        return @{ Version = '2.0.1' }
     }
 }
 
 function global:au_SearchReplace {
-    StandardNuspec
-    StandardChocolateyInstall
+    @{
+        "jdownloader.nuspec" = @{
+            "(<version>)(.*?)(</version>)" = "`$1$($Latest.Version)`$3"
+        }
+    }
 }
+
+update -NoCheckUrl

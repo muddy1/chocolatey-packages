@@ -1,35 +1,61 @@
 # Chocolatey Packages
 
-Automated and maintained Chocolatey packages repository for [muddy1](https://github.com/muddy1).
+Automated and maintained Chocolatey packages repository by [muddy1](https://github.com/muddy1).
 
-[![Run Chocolatey AU](https://github.com/muddy1/chocolatey-packages/actions/workflows/choco-au.yml/badge.svg)](https://github.com/muddy1/chocolatey-packages/actions/workflows/choco-au.yml)
+[![Chocolatey Package Updater](https://github.com/muddy1/chocolatey-packages/actions/workflows/choco-cron.yml/badge.svg)](https://github.com/muddy1/chocolatey-packages/actions/workflows/choco-cron.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 
-## Folder Structure
+---
 
-* **`automatic/`** - Packages automatically updated and published using [Chocolatey AU](https://github.com/chocolatey-community/chocolatey-au).
-* **`stable/`** - Stable, released package definitions maintained in the repository.
-* **`test/`** - Sandbox environment for developing and validating packages before promoting them to `automatic` or `stable`.
-* **`deprecated/`** - Packages that are obsolete or no longer maintained.
-* **`icons/`** - Centralized image and icon assets for package metadata.
-* **`screenshots/`** - Centralized screenshot assets.
-* **`setup/`** - Scripts and resources for Chocolatey AU setup and configuration.
+## Package Catalog
 
-## Requirements
+| Package | Status | Automation | Description |
+| :--- | :--- | :--- | :--- |
+| **[vortex](automatic/vortex)** | Active | Automatic (AU) | Nexus Mods modern mod manager |
+| **[jdownloader](automatic/jdownloader)** | Active | WinGet / AU | Free, open-source download management framework |
+| **[dismtools](stable/dismtools.stable)** | Active | Stable | Graphical interface and project-based GUI for DISM |
+| **[gamesavemanager](stable/gamesavemanager)** | Active | Stable | Automated game save backup and sync utility |
+| **[intel-chipset-inf](stable/intel-chipset-inf)** | Active | Stable | Intel Chipset Device Software INF Utility |
+| **[live2d](stable/live2d)** | Active | Stable | Live2D Cubism Editor for 2D dynamic animation |
+| **[live2d.beta](stable/live2d.beta)** | Active | Stable | Live2D Cubism Editor (Beta channel) |
+| **[touchportal](stable/touchportal)** | Active | Stable | Macro multi-action remote control for PC and streaming |
+| **[vroid-studio](stable/vroid-studio)** | Active | Stable | 3D humanoid avatar creator by Pixiv |
+| **[flakiesadb](stable/flakiesadb)** | Active | Stable | Android Debug Bridge utility toolkit |
+| **[dismgui](deprecated/dismgui)** | Deprecated | Archived | Legacy DISM GUI (superseded by DISMTools) |
 
-* [Chocolatey CLI](https://chocolatey.org/) (`choco.exe`)
-* PowerShell 5.1+ or PowerShell 7+
-* [chocolatey-au module](https://github.com/chocolatey-community/chocolatey-au)
+---
 
-## Updating Packages
+## Repository Structure
 
-To run updates locally with AU:
+* **`automatic/`** - Packages automatically updated and published using [Chocolatey AU](https://github.com/chocolatey-community/chocolatey-au). Each contains an `update.ps1` script.
+* **`stable/`** - Production-ready, validated package manifests.
+* **`test/`** - Sandbox environment for authoring and validating packages before promotion.
+* **`deprecated/`** - Retired packages preserved for historical reference.
+* **`icons/`** - Centralized image and icon assets referenced by package nuspec manifests.
+* **`screenshots/`** - Package screenshots and documentation media.
+
+---
+
+## Running Updates
+
+### Autonomous CI/CD (GitHub Actions)
+Updates run autonomously on a weekly schedule (Sunday at 03:00 UTC) via `.github/workflows/choco-cron.yml`. If upstream package updates are detected, packages are built, pushed to Chocolatey Community Repository, and updated manifests are committed back to the repository.
+
+### Local Execution (Windows)
+Run updates locally using the unified runner script:
 
 ```powershell
+# Dry-run analysis (verify upstream versions without packaging)
+.\Invoke-PackageCron.ps1 -WhatIf
+
 # Update all automatic packages
-.\update_all.ps1
+.\Invoke-PackageCron.ps1
 
 # Update a specific package
-.\update_all.ps1 -Name jdownloader
+.\Invoke-PackageCron.ps1 -Name "vortex"
+
+# Register local Windows Scheduled Task (runs weekly at 3:00 AM on Idle priority)
+.\Invoke-PackageCron.ps1 -RegisterTask
 ```
 
-
+For detailed cron and task scheduler configuration, see [CRON_SETUP.md](CRON_SETUP.md).

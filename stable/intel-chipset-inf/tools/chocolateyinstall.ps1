@@ -1,4 +1,4 @@
-﻿
+
 $ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'SetupChipset.exe'
@@ -21,7 +21,7 @@ $packageArgs = @{
 Install-ChocolateyInstallPackage @packageArgs
 
 # Remove the installers as there is no more need for it
-Remove-Item $toolsDir\*.exe -ea 0 -Force
+Remove-Item "$toolsDir\*.exe" -Force -ErrorAction SilentlyContinue
 
 
 

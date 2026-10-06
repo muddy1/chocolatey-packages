@@ -1,22 +1,30 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
-# Target the main installation directory directly
-$installDir = "$env:ProgramFiles\JDownloader"
+# 1. Resolve winget binary
+$wingetCmd = Get-Command -Name 'winget.exe' -ErrorAction SilentlyContinue
 
-if (Test-Path $installDir) {
-    Remove-Item $installDir -Recurse -Force -ErrorAction SilentlyContinue
+$wingetPath = if ($wingetCmd) {
+    $wingetCmd.Source
+} else {
+    $candidatePaths = @(
+        (Join-Path $env:LOCALAPPDATA 'Microsoft\WindowsApps\winget.exe'),
+        (Join-Path $env:ProgramFiles 'WindowsApps\Microsoft.DesktopAppInstaller_*_x64__8wekyb3d8bbwe\winget.exe')
+    )
+    $resolved = $candidatePaths | Where-Object { Test-Path $_ } | Select-Object -First 1
+    if ($resolved) { $resolved } else { 'winget.exe' }
 }
 
-# Clean up the registry uninstall keys so Chocolatey and Windows forget it ever existed
-$registryPaths = @(
-    "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*",
-    "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*"
+# 2. Background silent uninstall via WinGet
+$appId = 'AppWork.JDownloader'
+$arguments = @(
+    'uninstall',
+    '--id', $appId,
+    '--silent'
 )
 
-foreach ($path in $registryPaths) {
-    Get-ItemProperty -Path $path -ErrorAction SilentlyContinue |
-        Where-Object { $_.DisplayName -like 'JDownloader*' } |
-        ForEach-Object {
-            Remove-Item $_.PSPath -Recurse -Force -ErrorAction SilentlyContinue
-        }
+Write-Host "Uninstalling $appId via WinGet ($wingetPath)..."
+$process = Start-Process -FilePath $wingetPath -ArgumentList $arguments -Wait -PassThru -NoNewWindow
+
+if ($process.ExitCode -ne 0) {
+    Write-Warning "WinGet uninstallation of $appId exited with code $($process.ExitCode)."
 }
